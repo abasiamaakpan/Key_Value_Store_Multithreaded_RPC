@@ -14,6 +14,1735 @@ public final class KeyValueStoreProcedures {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  public interface BroadcasttoallclientsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Broadcasttoallclients)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 sendabort = 1;</code>
+     */
+    int getSendabort();
+
+    /**
+     * <code>int32 sendprepared = 2;</code>
+     */
+    int getSendprepared();
+
+    /**
+     * <code>int32 sendcommit = 3;</code>
+     */
+    int getSendcommit();
+
+    /**
+     * <code>string clientname = 4;</code>
+     */
+    java.lang.String getClientname();
+    /**
+     * <code>string clientname = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientnameBytes();
+  }
+  /**
+   * Protobuf type {@code Broadcasttoallclients}
+   */
+  public  static final class Broadcasttoallclients extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:Broadcasttoallclients)
+      BroadcasttoallclientsOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Broadcasttoallclients.newBuilder() to construct.
+    private Broadcasttoallclients(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Broadcasttoallclients() {
+      sendabort_ = 0;
+      sendprepared_ = 0;
+      sendcommit_ = 0;
+      clientname_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Broadcasttoallclients(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              sendabort_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              sendprepared_ = input.readInt32();
+              break;
+            }
+            case 24: {
+
+              sendcommit_ = input.readInt32();
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientname_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Broadcasttoallclients_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Broadcasttoallclients_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder.class);
+    }
+
+    public static final int SENDABORT_FIELD_NUMBER = 1;
+    private int sendabort_;
+    /**
+     * <code>int32 sendabort = 1;</code>
+     */
+    public int getSendabort() {
+      return sendabort_;
+    }
+
+    public static final int SENDPREPARED_FIELD_NUMBER = 2;
+    private int sendprepared_;
+    /**
+     * <code>int32 sendprepared = 2;</code>
+     */
+    public int getSendprepared() {
+      return sendprepared_;
+    }
+
+    public static final int SENDCOMMIT_FIELD_NUMBER = 3;
+    private int sendcommit_;
+    /**
+     * <code>int32 sendcommit = 3;</code>
+     */
+    public int getSendcommit() {
+      return sendcommit_;
+    }
+
+    public static final int CLIENTNAME_FIELD_NUMBER = 4;
+    private volatile java.lang.Object clientname_;
+    /**
+     * <code>string clientname = 4;</code>
+     */
+    public java.lang.String getClientname() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string clientname = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientnameBytes() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (sendabort_ != 0) {
+        output.writeInt32(1, sendabort_);
+      }
+      if (sendprepared_ != 0) {
+        output.writeInt32(2, sendprepared_);
+      }
+      if (sendcommit_ != 0) {
+        output.writeInt32(3, sendcommit_);
+      }
+      if (!getClientnameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, clientname_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (sendabort_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, sendabort_);
+      }
+      if (sendprepared_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, sendprepared_);
+      }
+      if (sendcommit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, sendcommit_);
+      }
+      if (!getClientnameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, clientname_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients) obj;
+
+      boolean result = true;
+      result = result && (getSendabort()
+          == other.getSendabort());
+      result = result && (getSendprepared()
+          == other.getSendprepared());
+      result = result && (getSendcommit()
+          == other.getSendcommit());
+      result = result && getClientname()
+          .equals(other.getClientname());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SENDABORT_FIELD_NUMBER;
+      hash = (53 * hash) + getSendabort();
+      hash = (37 * hash) + SENDPREPARED_FIELD_NUMBER;
+      hash = (53 * hash) + getSendprepared();
+      hash = (37 * hash) + SENDCOMMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getSendcommit();
+      hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getClientname().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code Broadcasttoallclients}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:Broadcasttoallclients)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BroadcasttoallclientsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Broadcasttoallclients_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Broadcasttoallclients_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        sendabort_ = 0;
+
+        sendprepared_ = 0;
+
+        sendcommit_ = 0;
+
+        clientname_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Broadcasttoallclients_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients(this);
+        result.sendabort_ = sendabort_;
+        result.sendprepared_ = sendprepared_;
+        result.sendcommit_ = sendcommit_;
+        result.clientname_ = clientname_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.getDefaultInstance()) return this;
+        if (other.getSendabort() != 0) {
+          setSendabort(other.getSendabort());
+        }
+        if (other.getSendprepared() != 0) {
+          setSendprepared(other.getSendprepared());
+        }
+        if (other.getSendcommit() != 0) {
+          setSendcommit(other.getSendcommit());
+        }
+        if (!other.getClientname().isEmpty()) {
+          clientname_ = other.clientname_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int sendabort_ ;
+      /**
+       * <code>int32 sendabort = 1;</code>
+       */
+      public int getSendabort() {
+        return sendabort_;
+      }
+      /**
+       * <code>int32 sendabort = 1;</code>
+       */
+      public Builder setSendabort(int value) {
+        
+        sendabort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 sendabort = 1;</code>
+       */
+      public Builder clearSendabort() {
+        
+        sendabort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sendprepared_ ;
+      /**
+       * <code>int32 sendprepared = 2;</code>
+       */
+      public int getSendprepared() {
+        return sendprepared_;
+      }
+      /**
+       * <code>int32 sendprepared = 2;</code>
+       */
+      public Builder setSendprepared(int value) {
+        
+        sendprepared_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 sendprepared = 2;</code>
+       */
+      public Builder clearSendprepared() {
+        
+        sendprepared_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sendcommit_ ;
+      /**
+       * <code>int32 sendcommit = 3;</code>
+       */
+      public int getSendcommit() {
+        return sendcommit_;
+      }
+      /**
+       * <code>int32 sendcommit = 3;</code>
+       */
+      public Builder setSendcommit(int value) {
+        
+        sendcommit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 sendcommit = 3;</code>
+       */
+      public Builder clearSendcommit() {
+        
+        sendcommit_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object clientname_ = "";
+      /**
+       * <code>string clientname = 4;</code>
+       */
+      public java.lang.String getClientname() {
+        java.lang.Object ref = clientname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientnameBytes() {
+        java.lang.Object ref = clientname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 4;</code>
+       */
+      public Builder setClientname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 4;</code>
+       */
+      public Builder clearClientname() {
+        
+        clientname_ = getDefaultInstance().getClientname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 4;</code>
+       */
+      public Builder setClientnameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:Broadcasttoallclients)
+    }
+
+    // @@protoc_insertion_point(class_scope:Broadcasttoallclients)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Broadcasttoallclients>
+        PARSER = new com.google.protobuf.AbstractParser<Broadcasttoallclients>() {
+      @java.lang.Override
+      public Broadcasttoallclients parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Broadcasttoallclients(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Broadcasttoallclients> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Broadcasttoallclients> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface FromServerOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:FromServer)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.Broadcasttoallclients message = 1;</code>
+     */
+    boolean hasMessage();
+    /**
+     * <code>.Broadcasttoallclients message = 1;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients getMessage();
+    /**
+     * <code>.Broadcasttoallclients message = 1;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BroadcasttoallclientsOrBuilder getMessageOrBuilder();
+
+    /**
+     * <code>.SendNameofClient message2 = 2;</code>
+     */
+    boolean hasMessage2();
+    /**
+     * <code>.SendNameofClient message2 = 2;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient getMessage2();
+    /**
+     * <code>.SendNameofClient message2 = 2;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClientOrBuilder getMessage2OrBuilder();
+
+    /**
+     * <code>int32 checkglobalcommit = 3;</code>
+     */
+    int getCheckglobalcommit();
+
+    /**
+     * <code>int32 checkprepared = 4;</code>
+     */
+    int getCheckprepared();
+
+    /**
+     * <code>int32 checkabort = 5;</code>
+     */
+    int getCheckabort();
+  }
+  /**
+   * Protobuf type {@code FromServer}
+   */
+  public  static final class FromServer extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:FromServer)
+      FromServerOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use FromServer.newBuilder() to construct.
+    private FromServer(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private FromServer() {
+      checkglobalcommit_ = 0;
+      checkprepared_ = 0;
+      checkabort_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private FromServer(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder subBuilder = null;
+              if (message_ != null) {
+                subBuilder = message_.toBuilder();
+              }
+              message_ = input.readMessage(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(message_);
+                message_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 18: {
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.Builder subBuilder = null;
+              if (message2_ != null) {
+                subBuilder = message2_.toBuilder();
+              }
+              message2_ = input.readMessage(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(message2_);
+                message2_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 24: {
+
+              checkglobalcommit_ = input.readInt32();
+              break;
+            }
+            case 32: {
+
+              checkprepared_ = input.readInt32();
+              break;
+            }
+            case 40: {
+
+              checkabort_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_FromServer_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_FromServer_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.Builder.class);
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 1;
+    private com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients message_;
+    /**
+     * <code>.Broadcasttoallclients message = 1;</code>
+     */
+    public boolean hasMessage() {
+      return message_ != null;
+    }
+    /**
+     * <code>.Broadcasttoallclients message = 1;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients getMessage() {
+      return message_ == null ? com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.getDefaultInstance() : message_;
+    }
+    /**
+     * <code>.Broadcasttoallclients message = 1;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BroadcasttoallclientsOrBuilder getMessageOrBuilder() {
+      return getMessage();
+    }
+
+    public static final int MESSAGE2_FIELD_NUMBER = 2;
+    private com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient message2_;
+    /**
+     * <code>.SendNameofClient message2 = 2;</code>
+     */
+    public boolean hasMessage2() {
+      return message2_ != null;
+    }
+    /**
+     * <code>.SendNameofClient message2 = 2;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient getMessage2() {
+      return message2_ == null ? com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.getDefaultInstance() : message2_;
+    }
+    /**
+     * <code>.SendNameofClient message2 = 2;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClientOrBuilder getMessage2OrBuilder() {
+      return getMessage2();
+    }
+
+    public static final int CHECKGLOBALCOMMIT_FIELD_NUMBER = 3;
+    private int checkglobalcommit_;
+    /**
+     * <code>int32 checkglobalcommit = 3;</code>
+     */
+    public int getCheckglobalcommit() {
+      return checkglobalcommit_;
+    }
+
+    public static final int CHECKPREPARED_FIELD_NUMBER = 4;
+    private int checkprepared_;
+    /**
+     * <code>int32 checkprepared = 4;</code>
+     */
+    public int getCheckprepared() {
+      return checkprepared_;
+    }
+
+    public static final int CHECKABORT_FIELD_NUMBER = 5;
+    private int checkabort_;
+    /**
+     * <code>int32 checkabort = 5;</code>
+     */
+    public int getCheckabort() {
+      return checkabort_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (message_ != null) {
+        output.writeMessage(1, getMessage());
+      }
+      if (message2_ != null) {
+        output.writeMessage(2, getMessage2());
+      }
+      if (checkglobalcommit_ != 0) {
+        output.writeInt32(3, checkglobalcommit_);
+      }
+      if (checkprepared_ != 0) {
+        output.writeInt32(4, checkprepared_);
+      }
+      if (checkabort_ != 0) {
+        output.writeInt32(5, checkabort_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (message_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getMessage());
+      }
+      if (message2_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getMessage2());
+      }
+      if (checkglobalcommit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, checkglobalcommit_);
+      }
+      if (checkprepared_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, checkprepared_);
+      }
+      if (checkabort_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, checkabort_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer) obj;
+
+      boolean result = true;
+      result = result && (hasMessage() == other.hasMessage());
+      if (hasMessage()) {
+        result = result && getMessage()
+            .equals(other.getMessage());
+      }
+      result = result && (hasMessage2() == other.hasMessage2());
+      if (hasMessage2()) {
+        result = result && getMessage2()
+            .equals(other.getMessage2());
+      }
+      result = result && (getCheckglobalcommit()
+          == other.getCheckglobalcommit());
+      result = result && (getCheckprepared()
+          == other.getCheckprepared());
+      result = result && (getCheckabort()
+          == other.getCheckabort());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasMessage()) {
+        hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+        hash = (53 * hash) + getMessage().hashCode();
+      }
+      if (hasMessage2()) {
+        hash = (37 * hash) + MESSAGE2_FIELD_NUMBER;
+        hash = (53 * hash) + getMessage2().hashCode();
+      }
+      hash = (37 * hash) + CHECKGLOBALCOMMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getCheckglobalcommit();
+      hash = (37 * hash) + CHECKPREPARED_FIELD_NUMBER;
+      hash = (53 * hash) + getCheckprepared();
+      hash = (37 * hash) + CHECKABORT_FIELD_NUMBER;
+      hash = (53 * hash) + getCheckabort();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code FromServer}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:FromServer)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServerOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_FromServer_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_FromServer_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (messageBuilder_ == null) {
+          message_ = null;
+        } else {
+          message_ = null;
+          messageBuilder_ = null;
+        }
+        if (message2Builder_ == null) {
+          message2_ = null;
+        } else {
+          message2_ = null;
+          message2Builder_ = null;
+        }
+        checkglobalcommit_ = 0;
+
+        checkprepared_ = 0;
+
+        checkabort_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_FromServer_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer(this);
+        if (messageBuilder_ == null) {
+          result.message_ = message_;
+        } else {
+          result.message_ = messageBuilder_.build();
+        }
+        if (message2Builder_ == null) {
+          result.message2_ = message2_;
+        } else {
+          result.message2_ = message2Builder_.build();
+        }
+        result.checkglobalcommit_ = checkglobalcommit_;
+        result.checkprepared_ = checkprepared_;
+        result.checkabort_ = checkabort_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.getDefaultInstance()) return this;
+        if (other.hasMessage()) {
+          mergeMessage(other.getMessage());
+        }
+        if (other.hasMessage2()) {
+          mergeMessage2(other.getMessage2());
+        }
+        if (other.getCheckglobalcommit() != 0) {
+          setCheckglobalcommit(other.getCheckglobalcommit());
+        }
+        if (other.getCheckprepared() != 0) {
+          setCheckprepared(other.getCheckprepared());
+        }
+        if (other.getCheckabort() != 0) {
+          setCheckabort(other.getCheckabort());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients message_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BroadcasttoallclientsOrBuilder> messageBuilder_;
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public boolean hasMessage() {
+        return messageBuilder_ != null || message_ != null;
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients getMessage() {
+        if (messageBuilder_ == null) {
+          return message_ == null ? com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.getDefaultInstance() : message_;
+        } else {
+          return messageBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public Builder setMessage(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients value) {
+        if (messageBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          message_ = value;
+          onChanged();
+        } else {
+          messageBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public Builder setMessage(
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder builderForValue) {
+        if (messageBuilder_ == null) {
+          message_ = builderForValue.build();
+          onChanged();
+        } else {
+          messageBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public Builder mergeMessage(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients value) {
+        if (messageBuilder_ == null) {
+          if (message_ != null) {
+            message_ =
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.newBuilder(message_).mergeFrom(value).buildPartial();
+          } else {
+            message_ = value;
+          }
+          onChanged();
+        } else {
+          messageBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public Builder clearMessage() {
+        if (messageBuilder_ == null) {
+          message_ = null;
+          onChanged();
+        } else {
+          message_ = null;
+          messageBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder getMessageBuilder() {
+        
+        onChanged();
+        return getMessageFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BroadcasttoallclientsOrBuilder getMessageOrBuilder() {
+        if (messageBuilder_ != null) {
+          return messageBuilder_.getMessageOrBuilder();
+        } else {
+          return message_ == null ?
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.getDefaultInstance() : message_;
+        }
+      }
+      /**
+       * <code>.Broadcasttoallclients message = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BroadcasttoallclientsOrBuilder> 
+          getMessageFieldBuilder() {
+        if (messageBuilder_ == null) {
+          messageBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BroadcasttoallclientsOrBuilder>(
+                  getMessage(),
+                  getParentForChildren(),
+                  isClean());
+          message_ = null;
+        }
+        return messageBuilder_;
+      }
+
+      private com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient message2_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClientOrBuilder> message2Builder_;
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public boolean hasMessage2() {
+        return message2Builder_ != null || message2_ != null;
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient getMessage2() {
+        if (message2Builder_ == null) {
+          return message2_ == null ? com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.getDefaultInstance() : message2_;
+        } else {
+          return message2Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public Builder setMessage2(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient value) {
+        if (message2Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          message2_ = value;
+          onChanged();
+        } else {
+          message2Builder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public Builder setMessage2(
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.Builder builderForValue) {
+        if (message2Builder_ == null) {
+          message2_ = builderForValue.build();
+          onChanged();
+        } else {
+          message2Builder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public Builder mergeMessage2(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient value) {
+        if (message2Builder_ == null) {
+          if (message2_ != null) {
+            message2_ =
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.newBuilder(message2_).mergeFrom(value).buildPartial();
+          } else {
+            message2_ = value;
+          }
+          onChanged();
+        } else {
+          message2Builder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public Builder clearMessage2() {
+        if (message2Builder_ == null) {
+          message2_ = null;
+          onChanged();
+        } else {
+          message2_ = null;
+          message2Builder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.Builder getMessage2Builder() {
+        
+        onChanged();
+        return getMessage2FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClientOrBuilder getMessage2OrBuilder() {
+        if (message2Builder_ != null) {
+          return message2Builder_.getMessageOrBuilder();
+        } else {
+          return message2_ == null ?
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.getDefaultInstance() : message2_;
+        }
+      }
+      /**
+       * <code>.SendNameofClient message2 = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClientOrBuilder> 
+          getMessage2FieldBuilder() {
+        if (message2Builder_ == null) {
+          message2Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClientOrBuilder>(
+                  getMessage2(),
+                  getParentForChildren(),
+                  isClean());
+          message2_ = null;
+        }
+        return message2Builder_;
+      }
+
+      private int checkglobalcommit_ ;
+      /**
+       * <code>int32 checkglobalcommit = 3;</code>
+       */
+      public int getCheckglobalcommit() {
+        return checkglobalcommit_;
+      }
+      /**
+       * <code>int32 checkglobalcommit = 3;</code>
+       */
+      public Builder setCheckglobalcommit(int value) {
+        
+        checkglobalcommit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 checkglobalcommit = 3;</code>
+       */
+      public Builder clearCheckglobalcommit() {
+        
+        checkglobalcommit_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int checkprepared_ ;
+      /**
+       * <code>int32 checkprepared = 4;</code>
+       */
+      public int getCheckprepared() {
+        return checkprepared_;
+      }
+      /**
+       * <code>int32 checkprepared = 4;</code>
+       */
+      public Builder setCheckprepared(int value) {
+        
+        checkprepared_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 checkprepared = 4;</code>
+       */
+      public Builder clearCheckprepared() {
+        
+        checkprepared_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int checkabort_ ;
+      /**
+       * <code>int32 checkabort = 5;</code>
+       */
+      public int getCheckabort() {
+        return checkabort_;
+      }
+      /**
+       * <code>int32 checkabort = 5;</code>
+       */
+      public Builder setCheckabort(int value) {
+        
+        checkabort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 checkabort = 5;</code>
+       */
+      public Builder clearCheckabort() {
+        
+        checkabort_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:FromServer)
+    }
+
+    // @@protoc_insertion_point(class_scope:FromServer)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<FromServer>
+        PARSER = new com.google.protobuf.AbstractParser<FromServer>() {
+      @java.lang.Override
+      public FromServer parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new FromServer(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<FromServer> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<FromServer> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface PairOrBuilder extends
       // @@protoc_insertion_point(interface_extends:Pair)
       com.google.protobuf.MessageOrBuilder {
@@ -34,22 +1763,19 @@ public final class KeyValueStoreProcedures {
         getValueBytes();
 
     /**
-     * <pre>
-     * message SendNameofClient;
-     * </pre>
-     *
      * <code>string clientname = 3;</code>
      */
     java.lang.String getClientname();
     /**
-     * <pre>
-     * message SendNameofClient;
-     * </pre>
-     *
      * <code>string clientname = 3;</code>
      */
     com.google.protobuf.ByteString
         getClientnameBytes();
+
+    /**
+     * <code>int32 portnumber = 4;</code>
+     */
+    int getPortnumber();
   }
   /**
    * Protobuf type {@code Pair}
@@ -67,6 +1793,7 @@ public final class KeyValueStoreProcedures {
       key_ = 0;
       value_ = "";
       clientname_ = "";
+      portnumber_ = 0;
     }
 
     @java.lang.Override
@@ -108,6 +1835,11 @@ public final class KeyValueStoreProcedures {
               java.lang.String s = input.readStringRequireUtf8();
 
               clientname_ = s;
+              break;
+            }
+            case 32: {
+
+              portnumber_ = input.readInt32();
               break;
             }
             default: {
@@ -188,10 +1920,6 @@ public final class KeyValueStoreProcedures {
     public static final int CLIENTNAME_FIELD_NUMBER = 3;
     private volatile java.lang.Object clientname_;
     /**
-     * <pre>
-     * message SendNameofClient;
-     * </pre>
-     *
      * <code>string clientname = 3;</code>
      */
     public java.lang.String getClientname() {
@@ -207,10 +1935,6 @@ public final class KeyValueStoreProcedures {
       }
     }
     /**
-     * <pre>
-     * message SendNameofClient;
-     * </pre>
-     *
      * <code>string clientname = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -225,6 +1949,15 @@ public final class KeyValueStoreProcedures {
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
+    }
+
+    public static final int PORTNUMBER_FIELD_NUMBER = 4;
+    private int portnumber_;
+    /**
+     * <code>int32 portnumber = 4;</code>
+     */
+    public int getPortnumber() {
+      return portnumber_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -250,6 +1983,9 @@ public final class KeyValueStoreProcedures {
       if (!getClientnameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, clientname_);
       }
+      if (portnumber_ != 0) {
+        output.writeInt32(4, portnumber_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -268,6 +2004,10 @@ public final class KeyValueStoreProcedures {
       }
       if (!getClientnameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, clientname_);
+      }
+      if (portnumber_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, portnumber_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -291,6 +2031,8 @@ public final class KeyValueStoreProcedures {
           .equals(other.getValue());
       result = result && getClientname()
           .equals(other.getClientname());
+      result = result && (getPortnumber()
+          == other.getPortnumber());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -308,6 +2050,8 @@ public final class KeyValueStoreProcedures {
       hash = (53 * hash) + getValue().hashCode();
       hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
       hash = (53 * hash) + getClientname().hashCode();
+      hash = (37 * hash) + PORTNUMBER_FIELD_NUMBER;
+      hash = (53 * hash) + getPortnumber();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -447,6 +2191,8 @@ public final class KeyValueStoreProcedures {
 
         clientname_ = "";
 
+        portnumber_ = 0;
+
         return this;
       }
 
@@ -476,6 +2222,7 @@ public final class KeyValueStoreProcedures {
         result.key_ = key_;
         result.value_ = value_;
         result.clientname_ = clientname_;
+        result.portnumber_ = portnumber_;
         onBuilt();
         return result;
       }
@@ -534,6 +2281,9 @@ public final class KeyValueStoreProcedures {
         if (!other.getClientname().isEmpty()) {
           clientname_ = other.clientname_;
           onChanged();
+        }
+        if (other.getPortnumber() != 0) {
+          setPortnumber(other.getPortnumber());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -661,10 +2411,6 @@ public final class KeyValueStoreProcedures {
 
       private java.lang.Object clientname_ = "";
       /**
-       * <pre>
-       * message SendNameofClient;
-       * </pre>
-       *
        * <code>string clientname = 3;</code>
        */
       public java.lang.String getClientname() {
@@ -680,10 +2426,6 @@ public final class KeyValueStoreProcedures {
         }
       }
       /**
-       * <pre>
-       * message SendNameofClient;
-       * </pre>
-       *
        * <code>string clientname = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -700,10 +2442,6 @@ public final class KeyValueStoreProcedures {
         }
       }
       /**
-       * <pre>
-       * message SendNameofClient;
-       * </pre>
-       *
        * <code>string clientname = 3;</code>
        */
       public Builder setClientname(
@@ -717,10 +2455,6 @@ public final class KeyValueStoreProcedures {
         return this;
       }
       /**
-       * <pre>
-       * message SendNameofClient;
-       * </pre>
-       *
        * <code>string clientname = 3;</code>
        */
       public Builder clearClientname() {
@@ -730,10 +2464,6 @@ public final class KeyValueStoreProcedures {
         return this;
       }
       /**
-       * <pre>
-       * message SendNameofClient;
-       * </pre>
-       *
        * <code>string clientname = 3;</code>
        */
       public Builder setClientnameBytes(
@@ -744,6 +2474,32 @@ public final class KeyValueStoreProcedures {
   checkByteStringIsUtf8(value);
         
         clientname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int portnumber_ ;
+      /**
+       * <code>int32 portnumber = 4;</code>
+       */
+      public int getPortnumber() {
+        return portnumber_;
+      }
+      /**
+       * <code>int32 portnumber = 4;</code>
+       */
+      public Builder setPortnumber(int value) {
+        
+        portnumber_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 portnumber = 4;</code>
+       */
+      public Builder clearPortnumber() {
+        
+        portnumber_ = 0;
         onChanged();
         return this;
       }
@@ -795,6 +2551,619 @@ public final class KeyValueStoreProcedures {
 
     @java.lang.Override
     public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Pair getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface AbortorcommitOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Abortorcommit)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 aborco = 1;</code>
+     */
+    int getAborco();
+
+    /**
+     * <code>string clientname = 2;</code>
+     */
+    java.lang.String getClientname();
+    /**
+     * <code>string clientname = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientnameBytes();
+  }
+  /**
+   * Protobuf type {@code Abortorcommit}
+   */
+  public  static final class Abortorcommit extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:Abortorcommit)
+      AbortorcommitOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Abortorcommit.newBuilder() to construct.
+    private Abortorcommit(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Abortorcommit() {
+      aborco_ = 0;
+      clientname_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Abortorcommit(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              aborco_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientname_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Abortorcommit_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Abortorcommit_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.Builder.class);
+    }
+
+    public static final int ABORCO_FIELD_NUMBER = 1;
+    private int aborco_;
+    /**
+     * <code>int32 aborco = 1;</code>
+     */
+    public int getAborco() {
+      return aborco_;
+    }
+
+    public static final int CLIENTNAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object clientname_;
+    /**
+     * <code>string clientname = 2;</code>
+     */
+    public java.lang.String getClientname() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string clientname = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientnameBytes() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (aborco_ != 0) {
+        output.writeInt32(1, aborco_);
+      }
+      if (!getClientnameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, clientname_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (aborco_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, aborco_);
+      }
+      if (!getClientnameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, clientname_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit) obj;
+
+      boolean result = true;
+      result = result && (getAborco()
+          == other.getAborco());
+      result = result && getClientname()
+          .equals(other.getClientname());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ABORCO_FIELD_NUMBER;
+      hash = (53 * hash) + getAborco();
+      hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getClientname().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code Abortorcommit}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:Abortorcommit)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.AbortorcommitOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Abortorcommit_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Abortorcommit_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        aborco_ = 0;
+
+        clientname_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Abortorcommit_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit(this);
+        result.aborco_ = aborco_;
+        result.clientname_ = clientname_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.getDefaultInstance()) return this;
+        if (other.getAborco() != 0) {
+          setAborco(other.getAborco());
+        }
+        if (!other.getClientname().isEmpty()) {
+          clientname_ = other.clientname_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int aborco_ ;
+      /**
+       * <code>int32 aborco = 1;</code>
+       */
+      public int getAborco() {
+        return aborco_;
+      }
+      /**
+       * <code>int32 aborco = 1;</code>
+       */
+      public Builder setAborco(int value) {
+        
+        aborco_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 aborco = 1;</code>
+       */
+      public Builder clearAborco() {
+        
+        aborco_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object clientname_ = "";
+      /**
+       * <code>string clientname = 2;</code>
+       */
+      public java.lang.String getClientname() {
+        java.lang.Object ref = clientname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientnameBytes() {
+        java.lang.Object ref = clientname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 2;</code>
+       */
+      public Builder setClientname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 2;</code>
+       */
+      public Builder clearClientname() {
+        
+        clientname_ = getDefaultInstance().getClientname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 2;</code>
+       */
+      public Builder setClientnameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:Abortorcommit)
+    }
+
+    // @@protoc_insertion_point(class_scope:Abortorcommit)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Abortorcommit>
+        PARSER = new com.google.protobuf.AbstractParser<Abortorcommit>() {
+      @java.lang.Override
+      public Abortorcommit parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Abortorcommit(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Abortorcommit> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Abortorcommit> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1368,6 +3737,11 @@ public final class KeyValueStoreProcedures {
      */
     com.google.protobuf.ByteString
         getClientnameBytes();
+
+    /**
+     * <code>int32 portnumber = 3;</code>
+     */
+    int getPortnumber();
   }
   /**
    * Protobuf type {@code GetKey}
@@ -1384,6 +3758,7 @@ public final class KeyValueStoreProcedures {
     private GetKey() {
       inputkey_ = 0;
       clientname_ = "";
+      portnumber_ = 0;
     }
 
     @java.lang.Override
@@ -1419,6 +3794,11 @@ public final class KeyValueStoreProcedures {
               java.lang.String s = input.readStringRequireUtf8();
 
               clientname_ = s;
+              break;
+            }
+            case 24: {
+
+              portnumber_ = input.readInt32();
               break;
             }
             default: {
@@ -1496,6 +3876,15 @@ public final class KeyValueStoreProcedures {
       }
     }
 
+    public static final int PORTNUMBER_FIELD_NUMBER = 3;
+    private int portnumber_;
+    /**
+     * <code>int32 portnumber = 3;</code>
+     */
+    public int getPortnumber() {
+      return portnumber_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1516,6 +3905,9 @@ public final class KeyValueStoreProcedures {
       if (!getClientnameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, clientname_);
       }
+      if (portnumber_ != 0) {
+        output.writeInt32(3, portnumber_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -1531,6 +3923,10 @@ public final class KeyValueStoreProcedures {
       }
       if (!getClientnameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, clientname_);
+      }
+      if (portnumber_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, portnumber_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1552,6 +3948,8 @@ public final class KeyValueStoreProcedures {
           == other.getInputkey());
       result = result && getClientname()
           .equals(other.getClientname());
+      result = result && (getPortnumber()
+          == other.getPortnumber());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -1567,6 +3965,8 @@ public final class KeyValueStoreProcedures {
       hash = (53 * hash) + getInputkey();
       hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
       hash = (53 * hash) + getClientname().hashCode();
+      hash = (37 * hash) + PORTNUMBER_FIELD_NUMBER;
+      hash = (53 * hash) + getPortnumber();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1704,6 +4104,8 @@ public final class KeyValueStoreProcedures {
 
         clientname_ = "";
 
+        portnumber_ = 0;
+
         return this;
       }
 
@@ -1732,6 +4134,7 @@ public final class KeyValueStoreProcedures {
         com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetKey result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetKey(this);
         result.inputkey_ = inputkey_;
         result.clientname_ = clientname_;
+        result.portnumber_ = portnumber_;
         onBuilt();
         return result;
       }
@@ -1786,6 +4189,9 @@ public final class KeyValueStoreProcedures {
         if (!other.getClientname().isEmpty()) {
           clientname_ = other.clientname_;
           onChanged();
+        }
+        if (other.getPortnumber() != 0) {
+          setPortnumber(other.getPortnumber());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1910,6 +4316,32 @@ public final class KeyValueStoreProcedures {
         onChanged();
         return this;
       }
+
+      private int portnumber_ ;
+      /**
+       * <code>int32 portnumber = 3;</code>
+       */
+      public int getPortnumber() {
+        return portnumber_;
+      }
+      /**
+       * <code>int32 portnumber = 3;</code>
+       */
+      public Builder setPortnumber(int value) {
+        
+        portnumber_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 portnumber = 3;</code>
+       */
+      public Builder clearPortnumber() {
+        
+        portnumber_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1981,6 +4413,11 @@ public final class KeyValueStoreProcedures {
      */
     com.google.protobuf.ByteString
         getClientnameBytes();
+
+    /**
+     * <code>int32 portnumber = 3;</code>
+     */
+    int getPortnumber();
   }
   /**
    * Protobuf type {@code DeleteKey}
@@ -1997,6 +4434,7 @@ public final class KeyValueStoreProcedures {
     private DeleteKey() {
       theinputkey_ = 0;
       clientname_ = "";
+      portnumber_ = 0;
     }
 
     @java.lang.Override
@@ -2032,6 +4470,11 @@ public final class KeyValueStoreProcedures {
               java.lang.String s = input.readStringRequireUtf8();
 
               clientname_ = s;
+              break;
+            }
+            case 24: {
+
+              portnumber_ = input.readInt32();
               break;
             }
             default: {
@@ -2109,6 +4552,15 @@ public final class KeyValueStoreProcedures {
       }
     }
 
+    public static final int PORTNUMBER_FIELD_NUMBER = 3;
+    private int portnumber_;
+    /**
+     * <code>int32 portnumber = 3;</code>
+     */
+    public int getPortnumber() {
+      return portnumber_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -2129,6 +4581,9 @@ public final class KeyValueStoreProcedures {
       if (!getClientnameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, clientname_);
       }
+      if (portnumber_ != 0) {
+        output.writeInt32(3, portnumber_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -2144,6 +4599,10 @@ public final class KeyValueStoreProcedures {
       }
       if (!getClientnameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, clientname_);
+      }
+      if (portnumber_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, portnumber_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2165,6 +4624,8 @@ public final class KeyValueStoreProcedures {
           == other.getTheinputkey());
       result = result && getClientname()
           .equals(other.getClientname());
+      result = result && (getPortnumber()
+          == other.getPortnumber());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -2180,6 +4641,8 @@ public final class KeyValueStoreProcedures {
       hash = (53 * hash) + getTheinputkey();
       hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
       hash = (53 * hash) + getClientname().hashCode();
+      hash = (37 * hash) + PORTNUMBER_FIELD_NUMBER;
+      hash = (53 * hash) + getPortnumber();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2317,6 +4780,8 @@ public final class KeyValueStoreProcedures {
 
         clientname_ = "";
 
+        portnumber_ = 0;
+
         return this;
       }
 
@@ -2345,6 +4810,7 @@ public final class KeyValueStoreProcedures {
         com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.DeleteKey result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.DeleteKey(this);
         result.theinputkey_ = theinputkey_;
         result.clientname_ = clientname_;
+        result.portnumber_ = portnumber_;
         onBuilt();
         return result;
       }
@@ -2399,6 +4865,9 @@ public final class KeyValueStoreProcedures {
         if (!other.getClientname().isEmpty()) {
           clientname_ = other.clientname_;
           onChanged();
+        }
+        if (other.getPortnumber() != 0) {
+          setPortnumber(other.getPortnumber());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2520,6 +4989,32 @@ public final class KeyValueStoreProcedures {
   checkByteStringIsUtf8(value);
         
         clientname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int portnumber_ ;
+      /**
+       * <code>int32 portnumber = 3;</code>
+       */
+      public int getPortnumber() {
+        return portnumber_;
+      }
+      /**
+       * <code>int32 portnumber = 3;</code>
+       */
+      public Builder setPortnumber(int value) {
+        
+        portnumber_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 portnumber = 3;</code>
+       */
+      public Builder clearPortnumber() {
+        
+        portnumber_ = 0;
         onChanged();
         return this;
       }
@@ -5641,11 +8136,639 @@ public final class KeyValueStoreProcedures {
 
   }
 
+  public interface SuccessfulAbortOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SuccessfulAbort)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string message = 1;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>string message = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+
+    /**
+     * <code>int32 failure = 2;</code>
+     */
+    int getFailure();
+  }
+  /**
+   * Protobuf type {@code SuccessfulAbort}
+   */
+  public  static final class SuccessfulAbort extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SuccessfulAbort)
+      SuccessfulAbortOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SuccessfulAbort.newBuilder() to construct.
+    private SuccessfulAbort(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SuccessfulAbort() {
+      message_ = "";
+      failure_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SuccessfulAbort(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              message_ = s;
+              break;
+            }
+            case 16: {
+
+              failure_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SuccessfulAbort_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SuccessfulAbort_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.Builder.class);
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 1;
+    private volatile java.lang.Object message_;
+    /**
+     * <code>string message = 1;</code>
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        message_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string message = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int FAILURE_FIELD_NUMBER = 2;
+    private int failure_;
+    /**
+     * <code>int32 failure = 2;</code>
+     */
+    public int getFailure() {
+      return failure_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, message_);
+      }
+      if (failure_ != 0) {
+        output.writeInt32(2, failure_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, message_);
+      }
+      if (failure_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, failure_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort) obj;
+
+      boolean result = true;
+      result = result && getMessage()
+          .equals(other.getMessage());
+      result = result && (getFailure()
+          == other.getFailure());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage().hashCode();
+      hash = (37 * hash) + FAILURE_FIELD_NUMBER;
+      hash = (53 * hash) + getFailure();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SuccessfulAbort}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SuccessfulAbort)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbortOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SuccessfulAbort_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SuccessfulAbort_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        message_ = "";
+
+        failure_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SuccessfulAbort_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort(this);
+        result.message_ = message_;
+        result.failure_ = failure_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.getDefaultInstance()) return this;
+        if (!other.getMessage().isEmpty()) {
+          message_ = other.message_;
+          onChanged();
+        }
+        if (other.getFailure() != 0) {
+          setFailure(other.getFailure());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>string message = 1;</code>
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string message = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string message = 1;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 1;</code>
+       */
+      public Builder clearMessage() {
+        
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 1;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int failure_ ;
+      /**
+       * <code>int32 failure = 2;</code>
+       */
+      public int getFailure() {
+        return failure_;
+      }
+      /**
+       * <code>int32 failure = 2;</code>
+       */
+      public Builder setFailure(int value) {
+        
+        failure_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 failure = 2;</code>
+       */
+      public Builder clearFailure() {
+        
+        failure_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SuccessfulAbort)
+    }
+
+    // @@protoc_insertion_point(class_scope:SuccessfulAbort)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SuccessfulAbort>
+        PARSER = new com.google.protobuf.AbstractParser<SuccessfulAbort>() {
+      @java.lang.Override
+      public SuccessfulAbort parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SuccessfulAbort(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SuccessfulAbort> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SuccessfulAbort> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Broadcasttoallclients_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Broadcasttoallclients_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_FromServer_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_FromServer_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Pair_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Pair_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Abortorcommit_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Abortorcommit_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_SendNameofClient_descriptor;
   private static final 
@@ -5686,6 +8809,11 @@ public final class KeyValueStoreProcedures {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SuccessfulDelete_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SuccessfulAbort_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SuccessfulAbort_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5695,27 +8823,40 @@ public final class KeyValueStoreProcedures {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n key_value_store_procedures.proto\"6\n\004Pa" +
-      "ir\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\t\022\022\n\nclient" +
-      "name\030\003 \001(\t\"(\n\020SendNameofClient\022\024\n\014nameof" +
-      "client\030\001 \001(\t\".\n\006GetKey\022\020\n\010inputkey\030\001 \001(\005" +
-      "\022\022\n\nclientname\030\002 \001(\t\"4\n\tDeleteKey\022\023\n\013the" +
-      "inputkey\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\"2\n\nCl" +
-      "ientExit\022\020\n\010inputkey\030\001 \001(\005\022\022\n\nclientname" +
-      "\030\002 \001(\t\"2\n\016SuccessfulExit\022\017\n\007message\030\001 \001(" +
-      "\t\022\017\n\007failure\030\002 \001(\005\"1\n\rSuccessfulPut\022\017\n\007m" +
-      "essage\030\001 \001(\t\022\017\n\007failure\030\002 \001(\005\"1\n\rSuccess" +
-      "fulGet\022\017\n\007message\030\001 \001(\t\022\017\n\007failure\030\002 \001(\005" +
-      "\"4\n\020SuccessfulDelete\022\017\n\007message\030\001 \001(\t\022\017\n" +
-      "\007failure\030\002 \001(\0052\204\002\n\rKeyValueStore\022)\n\016Inse" +
-      "rtKeyValue\022\005.Pair\032\016.SuccessfulPut\"\000\022(\n\013G" +
-      "etKeyValue\022\007.GetKey\032\016.SuccessfulGet\"\000\0221\n" +
-      "\016DeleteKeyValue\022\n.DeleteKey\032\021.Successful" +
-      "Delete\"\000\022.\n\014ClientExited\022\013.ClientExit\032\017." +
-      "SuccessfulExit\"\000\022;\n\021EnterNameofClient\022\021." +
-      "SendNameofClient\032\021.SendNameofClient\"\000B$\n" +
-      "\"com.gRE_Multi_Threaded_Server.grpcb\006pro" +
-      "to3"
+      "\n key_value_store_procedures.proto\"h\n\025Br" +
+      "oadcasttoallclients\022\021\n\tsendabort\030\001 \001(\005\022\024" +
+      "\n\014sendprepared\030\002 \001(\005\022\022\n\nsendcommit\030\003 \001(\005" +
+      "\022\022\n\nclientname\030\004 \001(\t\"\240\001\n\nFromServer\022\'\n\007m" +
+      "essage\030\001 \001(\0132\026.Broadcasttoallclients\022#\n\010" +
+      "message2\030\002 \001(\0132\021.SendNameofClient\022\031\n\021che" +
+      "ckglobalcommit\030\003 \001(\005\022\025\n\rcheckprepared\030\004 " +
+      "\001(\005\022\022\n\ncheckabort\030\005 \001(\005\"J\n\004Pair\022\013\n\003key\030\001" +
+      " \001(\005\022\r\n\005value\030\002 \001(\t\022\022\n\nclientname\030\003 \001(\t\022" +
+      "\022\n\nportnumber\030\004 \001(\005\"3\n\rAbortorcommit\022\016\n\006" +
+      "aborco\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\"(\n\020Send" +
+      "NameofClient\022\024\n\014nameofclient\030\001 \001(\t\"B\n\006Ge" +
+      "tKey\022\020\n\010inputkey\030\001 \001(\005\022\022\n\nclientname\030\002 \001" +
+      "(\t\022\022\n\nportnumber\030\003 \001(\005\"H\n\tDeleteKey\022\023\n\013t" +
+      "heinputkey\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\022\022\n\n" +
+      "portnumber\030\003 \001(\005\"2\n\nClientExit\022\020\n\010inputk" +
+      "ey\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\"2\n\016Successf" +
+      "ulExit\022\017\n\007message\030\001 \001(\t\022\017\n\007failure\030\002 \001(\005" +
+      "\"1\n\rSuccessfulPut\022\017\n\007message\030\001 \001(\t\022\017\n\007fa" +
+      "ilure\030\002 \001(\005\"1\n\rSuccessfulGet\022\017\n\007message\030" +
+      "\001 \001(\t\022\017\n\007failure\030\002 \001(\005\"4\n\020SuccessfulDele" +
+      "te\022\017\n\007message\030\001 \001(\t\022\017\n\007failure\030\002 \001(\005\"3\n\017" +
+      "SuccessfulAbort\022\017\n\007message\030\001 \001(\t\022\017\n\007fail" +
+      "ure\030\002 \001(\0052\362\002\n\rKeyValueStore\022)\n\016InsertKey" +
+      "Value\022\005.Pair\032\016.SuccessfulPut\"\000\022(\n\013GetKey" +
+      "Value\022\007.GetKey\032\016.SuccessfulGet\"\000\0221\n\016Dele" +
+      "teKeyValue\022\n.DeleteKey\032\021.SuccessfulDelet" +
+      "e\"\000\022.\n\014ClientExited\022\013.ClientExit\032\017.Succe" +
+      "ssfulExit\"\000\022;\n\021EnterNameofClient\022\021.SendN" +
+      "ameofClient\032\021.SendNameofClient\"\000\0229\n\023Acce" +
+      "ptabortorcommit\022\016.Abortorcommit\032\020.Succes" +
+      "sfulAbort\"\000\0221\n\004chat\022\026.Broadcasttoallclie" +
+      "nts\032\013.FromServer\"\000(\0010\001B$\n\"com.gRE_Multi_" +
+      "Threaded_Server.grpcb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -5729,59 +8870,83 @@ public final class KeyValueStoreProcedures {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_Pair_descriptor =
+    internal_static_Broadcasttoallclients_descriptor =
       getDescriptor().getMessageTypes().get(0);
+    internal_static_Broadcasttoallclients_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Broadcasttoallclients_descriptor,
+        new java.lang.String[] { "Sendabort", "Sendprepared", "Sendcommit", "Clientname", });
+    internal_static_FromServer_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_FromServer_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_FromServer_descriptor,
+        new java.lang.String[] { "Message", "Message2", "Checkglobalcommit", "Checkprepared", "Checkabort", });
+    internal_static_Pair_descriptor =
+      getDescriptor().getMessageTypes().get(2);
     internal_static_Pair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Pair_descriptor,
-        new java.lang.String[] { "Key", "Value", "Clientname", });
+        new java.lang.String[] { "Key", "Value", "Clientname", "Portnumber", });
+    internal_static_Abortorcommit_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_Abortorcommit_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Abortorcommit_descriptor,
+        new java.lang.String[] { "Aborco", "Clientname", });
     internal_static_SendNameofClient_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_SendNameofClient_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SendNameofClient_descriptor,
         new java.lang.String[] { "Nameofclient", });
     internal_static_GetKey_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_GetKey_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetKey_descriptor,
-        new java.lang.String[] { "Inputkey", "Clientname", });
+        new java.lang.String[] { "Inputkey", "Clientname", "Portnumber", });
     internal_static_DeleteKey_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_DeleteKey_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeleteKey_descriptor,
-        new java.lang.String[] { "Theinputkey", "Clientname", });
+        new java.lang.String[] { "Theinputkey", "Clientname", "Portnumber", });
     internal_static_ClientExit_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_ClientExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientExit_descriptor,
         new java.lang.String[] { "Inputkey", "Clientname", });
     internal_static_SuccessfulExit_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_SuccessfulExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulExit_descriptor,
         new java.lang.String[] { "Message", "Failure", });
     internal_static_SuccessfulPut_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_SuccessfulPut_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulPut_descriptor,
         new java.lang.String[] { "Message", "Failure", });
     internal_static_SuccessfulGet_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_SuccessfulGet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulGet_descriptor,
         new java.lang.String[] { "Message", "Failure", });
     internal_static_SuccessfulDelete_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_SuccessfulDelete_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulDelete_descriptor,
+        new java.lang.String[] { "Message", "Failure", });
+    internal_static_SuccessfulAbort_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_SuccessfulAbort_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SuccessfulAbort_descriptor,
         new java.lang.String[] { "Message", "Failure", });
   }
 

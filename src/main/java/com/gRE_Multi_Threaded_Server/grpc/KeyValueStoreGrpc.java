@@ -187,6 +187,70 @@ public final class KeyValueStoreGrpc {
      return getEnterNameofClientMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit,
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort> getAcceptabortorcommitMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Acceptabortorcommit",
+      requestType = com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.class,
+      responseType = com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit,
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort> getAcceptabortorcommitMethod() {
+    io.grpc.MethodDescriptor<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort> getAcceptabortorcommitMethod;
+    if ((getAcceptabortorcommitMethod = KeyValueStoreGrpc.getAcceptabortorcommitMethod) == null) {
+      synchronized (KeyValueStoreGrpc.class) {
+        if ((getAcceptabortorcommitMethod = KeyValueStoreGrpc.getAcceptabortorcommitMethod) == null) {
+          KeyValueStoreGrpc.getAcceptabortorcommitMethod = getAcceptabortorcommitMethod = 
+              io.grpc.MethodDescriptor.<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "KeyValueStore", "Acceptabortorcommit"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort.getDefaultInstance()))
+                  .setSchemaDescriptor(new KeyValueStoreMethodDescriptorSupplier("Acceptabortorcommit"))
+                  .build();
+          }
+        }
+     }
+     return getAcceptabortorcommitMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients,
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer> getChatMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "chat",
+      requestType = com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.class,
+      responseType = com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+  public static io.grpc.MethodDescriptor<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients,
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer> getChatMethod() {
+    io.grpc.MethodDescriptor<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer> getChatMethod;
+    if ((getChatMethod = KeyValueStoreGrpc.getChatMethod) == null) {
+      synchronized (KeyValueStoreGrpc.class) {
+        if ((getChatMethod = KeyValueStoreGrpc.getChatMethod) == null) {
+          KeyValueStoreGrpc.getChatMethod = getChatMethod = 
+              io.grpc.MethodDescriptor.<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "KeyValueStore", "chat"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer.getDefaultInstance()))
+                  .setSchemaDescriptor(new KeyValueStoreMethodDescriptorSupplier("chat"))
+                  .build();
+          }
+        }
+     }
+     return getChatMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -249,6 +313,20 @@ public final class KeyValueStoreGrpc {
       asyncUnimplementedUnaryCall(getEnterNameofClientMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void acceptabortorcommit(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit request,
+        io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort> responseObserver) {
+      asyncUnimplementedUnaryCall(getAcceptabortorcommitMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients> chat(
+        io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer> responseObserver) {
+      return asyncUnimplementedStreamingCall(getChatMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -286,6 +364,20 @@ public final class KeyValueStoreGrpc {
                 com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient,
                 com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient>(
                   this, METHODID_ENTER_NAMEOF_CLIENT)))
+          .addMethod(
+            getAcceptabortorcommitMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit,
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort>(
+                  this, METHODID_ACCEPTABORTORCOMMIT)))
+          .addMethod(
+            getChatMethod(),
+            asyncBidiStreamingCall(
+              new MethodHandlers<
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients,
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer>(
+                  this, METHODID_CHAT)))
           .build();
     }
   }
@@ -347,6 +439,22 @@ public final class KeyValueStoreGrpc {
       asyncUnaryCall(
           getChannel().newCall(getEnterNameofClientMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void acceptabortorcommit(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit request,
+        io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getAcceptabortorcommitMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Broadcasttoallclients> chat(
+        io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer> responseObserver) {
+      return asyncBidiStreamingCall(
+          getChannel().newCall(getChatMethod(), getCallOptions()), responseObserver);
+    }
   }
 
   /**
@@ -400,6 +508,13 @@ public final class KeyValueStoreGrpc {
     public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient enterNameofClient(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient request) {
       return blockingUnaryCall(
           getChannel(), getEnterNameofClientMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort acceptabortorcommit(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit request) {
+      return blockingUnaryCall(
+          getChannel(), getAcceptabortorcommitMethod(), getCallOptions(), request);
     }
   }
 
@@ -460,6 +575,14 @@ public final class KeyValueStoreGrpc {
       return futureUnaryCall(
           getChannel().newCall(getEnterNameofClientMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort> acceptabortorcommit(
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit request) {
+      return futureUnaryCall(
+          getChannel().newCall(getAcceptabortorcommitMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_INSERT_KEY_VALUE = 0;
@@ -467,6 +590,8 @@ public final class KeyValueStoreGrpc {
   private static final int METHODID_DELETE_KEY_VALUE = 2;
   private static final int METHODID_CLIENT_EXITED = 3;
   private static final int METHODID_ENTER_NAMEOF_CLIENT = 4;
+  private static final int METHODID_ACCEPTABORTORCOMMIT = 5;
+  private static final int METHODID_CHAT = 6;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -505,6 +630,10 @@ public final class KeyValueStoreGrpc {
           serviceImpl.enterNameofClient((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient) request,
               (io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient>) responseObserver);
           break;
+        case METHODID_ACCEPTABORTORCOMMIT:
+          serviceImpl.acceptabortorcommit((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Abortorcommit) request,
+              (io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SuccessfulAbort>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -515,6 +644,9 @@ public final class KeyValueStoreGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_CHAT:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.chat(
+              (io.grpc.stub.StreamObserver<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.FromServer>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -571,6 +703,8 @@ public final class KeyValueStoreGrpc {
               .addMethod(getDeleteKeyValueMethod())
               .addMethod(getClientExitedMethod())
               .addMethod(getEnterNameofClientMethod())
+              .addMethod(getAcceptabortorcommitMethod())
+              .addMethod(getChatMethod())
               .build();
         }
       }

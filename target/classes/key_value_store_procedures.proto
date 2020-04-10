@@ -16,6 +16,31 @@ service KeyValueStore {
 
     rpc EnterNameofClient(SendNameofClient) returns (SendNameofClient) {}
 
+    rpc Acceptabortorcommit(Abortorcommit)  returns (SuccessfulAbort) {}
+
+    rpc chat(stream Broadcasttoallclients) returns (stream FromServer ) {}
+
+
+
+
+
+}
+
+message Broadcasttoallclients{
+    int32 sendabort=1;
+    int32 sendprepared=2;
+    int32 sendcommit=3;
+    string clientname=4;
+
+
+}
+
+message FromServer{
+    Broadcasttoallclients message = 1;
+    SendNameofClient message2 =2;
+    int32 checkglobalcommit=3;
+    int32 checkprepared=4;
+    int32 checkabort=5;
 
 
 }
@@ -24,6 +49,14 @@ message Pair {
      int32 key = 1;
      string value = 2;
      string clientname = 3;
+     int32 portnumber=4;
+}
+
+
+message Abortorcommit{
+    int32 aborco = 1;
+    string clientname = 2;
+
 }
 
 message SendNameofClient{
@@ -34,6 +67,8 @@ message SendNameofClient{
 message GetKey{
     int32 inputkey = 1;
     string clientname = 2;
+    int32 portnumber=3;
+
 }
 
 
@@ -41,6 +76,8 @@ message GetKey{
 message DeleteKey{
     int32 theinputkey = 1;
     string clientname = 2;
+    int32 portnumber=3;
+
 
 }
 
@@ -74,3 +111,12 @@ message SuccessfulDelete{
 
 
 }
+
+message SuccessfulAbort{
+    string message = 1;
+    int32 failure = 2;
+}
+
+
+
+
