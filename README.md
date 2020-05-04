@@ -1,36 +1,33 @@
-#[[#]]# ${Distributed Multithreaded Server RPC Key_Value_Store}
+# [Distributed Multithreaded Server RPC Key_Value_Store]
+## HashMap Initial Structure
+Key = 1, Value = value1
+Key = 2, Value = value2
+Key = 3, Value = value3
+Key = 4, Value = value4
+Key = 5, Value = value5
 
-##HashMap Initial Structure
-####Key = 1, Value = value1
-####Key = 2, Value = value2
-####Key = 3, Value = value3
-####Key = 4, Value = value4
-####Key = 5, Value = value5
+## Running the application
 
-#Running the application
-
-TODO: Run the server first on your terminal using java -jar /"your directory here"/gRE_Multi_Threaded_Project/out/artifacts/gRE_Multi_Threaded_Project_jar/gRE_Multi_Threaded_Project.jar 9090
+Run the server first on your terminal using java -jar /"your directory here"/gRE_Multi_Threaded_Project/out/artifacts/gRE_Multi_Threaded_Project_jar/gRE_Multi_Threaded_Project.jar 9090
 then run all clients 
 
-###Jar is server jar. GRPC Server is server program
-
-#[[#]]# ${Multithreaded Client RPC Key_Value_Store}
+Jar is server jar. GRPC Server is server program
 
 TODO: There are three clients, Client 7, Client 8 and Client 9
 
-###Jar2 is client7 jar. GRPCClient7 is Client 7 program
+Jar2 is client7 jar. GRPCClient7 is Client 7 program
 Run the client7 on your terminal using java -jar /"your directory here"/gRE_Multi_Threaded_Project/out/artifacts/gRE_Multi_Threaded_Project_jar2/gRE_Multi_Threaded_Project.jar 9090
 
 
-###Jar3 is client8 jar. GRPCClient8 is Client 8 program
+Jar3 is client8 jar. GRPCClient8 is Client 8 program
 Run the client8 on your terminal using java -jar /"your directory here"/gRE_Multi_Threaded_Project/out/artifacts/gRE_Multi_Threaded_Project_jar3/gRE_Multi_Threaded_Project.jar 9091
 
 
-###Jar4 is client9 jar. GRPCClient9 is Client 9 program
+Jar4 is client9 jar. GRPCClient9 is Client 9 program
 Run the client9 on your terminal using java -jar /"your directory here"/gRE_Multi_Threaded_Project/out/artifacts/gRE_Multi_Threaded_Project_jar4/gRE_Multi_Threaded_Project.jar 9092
 
 
-#Overview of Paxos as per this application
+## Overview of Paxos as per this application
 There are three clients. The clients are proposers. The servers/Service are Acceptors. The Learners 
 are the clients that failed to achieve consensus the first time. Consensus is achieved by the 
 majority of the proposers which are two out of three in this case. The steps are as follows:
@@ -48,9 +45,9 @@ Proposers that have been given access previously are told to reenter their sugge
 two of the three clients have oermission and reenter the right suggestion ID/proposal, consensus is achieved,
 else a client/proposer must wait till the majority of peers(2/3 clients) are given permission
 
-#Usage
+## Usage
 
-##Code Sequence
+## Code Sequence
 On startup, the sequence of code is as follows: 
 1) Do you want to shutdown a server? Y/N. Enter 1 for Y, 0 for No
 Enter 1 for Y, 0 for No
