@@ -7,8 +7,10 @@ import io.grpc.stub.StreamObserver;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 /**
@@ -26,6 +28,18 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
         put(4, "value4");
         put(5, "value5");
     }};
+
+    static ConcurrentHashMap<Integer,Integer> remainingserverlist = new ConcurrentHashMap<Integer,Integer>(){{
+        put(1, 9090);
+        put(2, 9091);
+        put(3, 9092);
+        put(4, 9093);
+        put(5, 9094);
+    }};
+    static ConcurrentHashMap<Integer,Integer> unavailableserverlistfromservice = new ConcurrentHashMap<Integer,Integer>();
+
+
+
 
 
     public static final List<String> clientList  = new ArrayList<String>();
@@ -54,17 +68,44 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
     static int commit3=0;
 
 
+    //static int suggestioninteger=0;
+    //static String suggestionstring="";
+    static int storeLargestSuggestionInteger=0;
+    public static final int CMD_PERMISSION_GRANTED=100;
+    public static final int CMD_PERMISSION_NOT_GRANTED=50;
+
+
     /**LinkedHashSet for Listeners**/
     private static LinkedHashSet<StreamObserver<KeyValueStoreProcedures.FromServer>> observers = new LinkedHashSet<>();
 
+    /**LinkedHashSet for Listeners in Paxos Protocol**/
+    private static LinkedHashSet<StreamObserver<KeyValueStoreProcedures.PermissionGrantedorDenied>> permissionobservers = new LinkedHashSet<>();
 
-        /**
+    public static final ConcurrentHashMap<String, Integer> testing = new ConcurrentHashMap<>();
+
+    public static final List<String> consensusFinalClientList  = new ArrayList<String>();
+
+    private static LinkedHashSet<String> clientListhashSet = null;
+
+    private static ArrayList<String> clientListWithoutDuplicates = null;
+
+
+    private static LinkedHashSet<StreamObserver<KeyValueStoreProcedures.Dictionary>> serverobservers = new LinkedHashSet<>();
+
+
+    private static int put=0;
+
+
+
+
+    /**
          * PUT into HashMap
          * @param request is the key-value pair to be put into hashmap
          * @param responseObserver is the response from service if PUT is successful or not
          */
     @Override
     public synchronized void  insertKeyValue(KeyValueStoreProcedures.Pair request, StreamObserver<KeyValueStoreProcedures.SuccessfulPut> responseObserver) {
+
         //super.insertKeyValue(request, responseObserver);
         Logger_Function("Inside Put Function");
         int key = request.getKey();
@@ -76,9 +117,6 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
         System.out.println(value);
         System.out.println(clientname);
         System.out.println(portnumber);
-
-
-
 
         KeyValueStoreProcedures.SuccessfulPut.Builder response = KeyValueStoreProcedures.SuccessfulPut.newBuilder();
             if (hmap.containsKey(key)) {
@@ -116,6 +154,21 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
 
                 }
 
+        }
+
+        Random rand= new Random();
+        if(rand.nextInt(5)==0) {
+            try {
+                Thread.currentThread().sleep(10000);
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+                Thread.currentThread().interrupt();
+                Thread.currentThread().start();
+            } catch (InterruptedException e) {
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+            } catch (IllegalThreadStateException e) {
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+
+            }
         }
 
         responseObserver.onNext(response.build());
@@ -196,13 +249,28 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
             }
 
         }
+
+        Random rand= new Random();
+        if(rand.nextInt(5)==0) {
+            try {
+                Thread.currentThread().sleep(10000);
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+                Thread.currentThread().interrupt();
+                Thread.currentThread().start();
+            } catch (InterruptedException e) {
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+            } catch (IllegalThreadStateException e) {
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+
+            }
+        }
         responseObserver.onNext(response.build());
         responseObserver.onCompleted();
 
     }
 
     /**
-     *  DELETE from Hashmap
+     * DELETE from Hashmap
      * @param request is the key to be deleted
      * @param responseObserver is the response from service if DELETE is successful or not
      */
@@ -213,9 +281,6 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
         int key = request.getTheinputkey();
         String clientname = request.getClientname();
         int portnumber=request.getPortnumber();
-
-
-
         Logger_Function(clientname + " entered Delete");
         Logger_Function("key from " + clientname +  ": " + key);
 
@@ -275,8 +340,37 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
 
         }
 
+        Random rand= new Random();
+        if(rand.nextInt(5)==0) {
+            try {
+                Thread.currentThread().sleep(10000);
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+                Thread.currentThread().interrupt();
+                Thread.currentThread().start();
+            } catch (InterruptedException e) {
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+            } catch (IllegalThreadStateException e) {
+                System.out.println("Acceptor stopped momentarily. Restarting acceptor......");
+
+            }
+        }
+
         responseObserver.onNext(response.build());
         responseObserver.onCompleted();
+    }
+
+    /**
+     * Message that server has been shutdown
+     * @param request is the request from clients
+     * @param responseObserver is the response to the client when sever is shutdown
+     */
+    @Override
+    public void sendServerShutdown(KeyValueStoreProcedures.ServerShutdown request, StreamObserver<KeyValueStoreProcedures.ServerShutdown> responseObserver) {
+
+       System.out.println("Server " + request.getServername()+ " shutdown");
+
+       //responseObserver.onNext(response.build());
+       // responseObserver.onCompleted();
     }
 
     /**
@@ -302,7 +396,173 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
         // super.deleteKeyValue(request, responseObserver);
         System.out.println(request.getNameofclient() + " started");
         clientList.add(request.getNameofclient());
+        clientListhashSet=new LinkedHashSet<String>(clientList);
+        clientListWithoutDuplicates=new ArrayList<String>(clientListhashSet);
+
+        //KeyValueStoreProcedures.SendNameofClient.Builder response = KeyValueStoreProcedures.SendNameofClient.newBuilder();
     }
+
+    /**
+     * Client action when they choose to exit
+     * @param request is the request from the client to shutdown itself when all servers are down
+     * @param responseObserver is the response to client on successful removal from network
+     */
+    @Override
+    public void removeClients(KeyValueStoreProcedures.removeClientsFromList request, StreamObserver<KeyValueStoreProcedures.removeClientsFromList> responseObserver) {
+        //super.removeClients(request, responseObserver);
+        System.out.println("removingClients");
+       clientListWithoutDuplicates.remove(request.getClientName());
+
+    }
+
+    /**
+     * Check if a server is available (Currently not in use)
+     * @param responseObserver is the response to client to confirm availability
+     * @return confirmed server availability
+     */
+    @Override
+    public StreamObserver<KeyValueStoreProcedures.BringServerDown> serverAvailabilityCheck(StreamObserver<KeyValueStoreProcedures.Dictionary> responseObserver) {
+        //return super.serverAvailabilityCheck(responseObserver);
+        serverobservers.add(responseObserver);
+        return new StreamObserver<KeyValueStoreProcedures.BringServerDown>() {
+            @Override
+            public void onNext(KeyValueStoreProcedures.BringServerDown bringServerDown) {
+
+                for(StreamObserver<KeyValueStoreProcedures.Dictionary> observer : serverobservers) {
+                    //KeyValueStoreProcedures.Dictionary.Builder response = KeyValueStoreProcedures.Dictionary.newBuilder();
+
+                    int targetserver=bringServerDown.getServertobringdown();
+
+                    if(remainingserverlist.isEmpty()){
+
+                        //response.setMessage("Server List Empty");
+                        observer.onNext(KeyValueStoreProcedures.Dictionary.newBuilder().setMessage("Server List Empty").build());
+
+                    }
+
+
+                    //for (ConcurrentHashMap.Entry<Integer,Integer> i : remainingserverlist.entrySet()) {
+                    else if(!remainingserverlist.containsValue(targetserver)){
+
+
+                        observer.onNext(KeyValueStoreProcedures.Dictionary.newBuilder().putAllPairs(remainingserverlist).setMessage("Server Non Existent or Already Down").build());
+
+                        //response.putAllPairs(remainingserverlist).setMessage("Server Non Existent or Already Down");
+
+                        for (ConcurrentHashMap.Entry<Integer,Integer> i : remainingserverlist.entrySet()) {
+                            Integer value = i.getValue();
+                            //System.out.println( "Server: " + value);
+                        }
+                        //break;
+                    }
+                    else if(remainingserverlist.containsValue(targetserver)){
+                        remainingserverlist.values().remove(targetserver);
+                        for (ConcurrentHashMap.Entry<Integer,Integer> i : remainingserverlist.entrySet()) {
+                            Integer value = i.getValue();
+                            //System.out.println( "Server: " + value);
+                        }
+                        observer.onNext(KeyValueStoreProcedures.Dictionary.newBuilder().putAllPairs(remainingserverlist).setMessage("Server Down").build());
+
+                       // response.putAllPairs(remainingserverlist).setMessage("Server Down");
+
+                        //break;
+                    }
+
+
+                }
+
+
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+
+            }
+
+            @Override
+            public void onCompleted() {
+
+            }
+        };
+    }
+
+    /**
+     * Validate suggestion integer from proposer
+     * @param responseObserver is the callback from server/acceptor to call with validated suggestion integer
+     * @return validated response from acceptor
+     */
+    @Override
+    public synchronized StreamObserver<KeyValueStoreProcedures.PermissionRequest> communicateWithProposers(StreamObserver<KeyValueStoreProcedures.PermissionGrantedorDenied> responseObserver) {
+        //return super.communicateWithProposers(responseObserver);
+        permissionobservers.add(responseObserver);
+
+        return new StreamObserver<KeyValueStoreProcedures.PermissionRequest>() {
+
+            @Override
+            public void onNext(KeyValueStoreProcedures.PermissionRequest permissionRequest) {
+                System.out.println(permissionRequest);
+                for(StreamObserver<KeyValueStoreProcedures.PermissionGrantedorDenied> observer : permissionobservers)  {
+
+
+                    int suggestioninteger=permissionRequest.getSuggestioninteger();
+                    String suggestionstring=permissionRequest.getSuggestionstring();
+                    String clientname = permissionRequest.getClientname();
+
+                    testing.put(clientname, suggestioninteger);
+
+                    for (ConcurrentHashMap.Entry<String,Integer> i : testing.entrySet()){
+                        String cname = i.getKey();
+//                        System.out.println("From client. After Put. The suggestion integer is " + i.getValue());
+//                        System.out.println("From client. After Put. Client Name is " + cname);
+
+                        int suggint = i.getValue();
+
+                        if(suggint >= storeLargestSuggestionInteger){
+                           // System.out.println("storeLargestSuggestionInteger >= suggint" );
+                            storeLargestSuggestionInteger=suggint;
+                            //storeLargestSuggestionString=suggstr;
+                            System.out.println(cname + ": " + storeLargestSuggestionInteger);
+                            //System.out.println(cname + ": " + storeLargestSuggestionString );
+                            observer.onNext(KeyValueStoreProcedures.PermissionGrantedorDenied.newBuilder().setPermreq(permissionRequest).setMessage(CMD_PERMISSION_GRANTED).setClientname(clientname).setSuggestionint(storeLargestSuggestionInteger).build());
+                           // System.out.println("storeLargestSuggestionInteger"+ storeLargestSuggestionInteger);
+                            break;
+
+
+                        }
+
+
+                        else {
+                           // System.out.println(" storeLargestSuggestionInteger < suggint || suggint == storeLargestSuggestionInteger && suggstr < 0" );
+                            System.out.println(cname + ": " + storeLargestSuggestionInteger);
+                            System.out.println("Suggestion Integer" + ": " + suggint );
+                            observer.onNext(KeyValueStoreProcedures.PermissionGrantedorDenied.newBuilder().setPermreq(permissionRequest).setMessage(CMD_PERMISSION_NOT_GRANTED).setClientname(clientname).setSuggestionint(storeLargestSuggestionInteger).build());
+                            //System.out.println("storeLargestSuggestionInteger"+ storeLargestSuggestionInteger);
+
+                            //send rejected to client
+                            break;
+
+                        }
+
+                    }
+
+                }
+
+            }
+            @Override
+            public void onError(Throwable throwable) {
+
+
+            }
+
+            @Override
+            public void onCompleted() {
+
+            }
+        };
+
+    }
+
+
 
     /**
      * Bidrectional communication with all Clients
@@ -342,9 +602,7 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
 
                    // System.out.println("Testing abort before calculation " + abort);
                   //  System.out.println("Testing compile_abort after calculation " + compile_abort);
-                  //  System.out.println("Testing commit2 " + commit2);
-
-
+                  //  System.out.println("Testing commit2 " + commit2)
 
                     /**send abort to clients**/
                     if (abort==5){
@@ -408,6 +666,149 @@ public class Key_Value_Store_Service extends KeyValueStoreGrpc.KeyValueStoreImpl
 
     }
 
+    /**
+     * Client request for server lists
+     * @param request is the client request
+     * @param responseObserver is the server list response
+     */
+    @Override
+    public void requestServerList(KeyValueStoreProcedures.RequestListofServers request, StreamObserver<KeyValueStoreProcedures.Dictionary> responseObserver) {
+        //super.requestServerList(request, responseObserver);
+        KeyValueStoreProcedures.Dictionary.Builder response = KeyValueStoreProcedures.Dictionary.newBuilder();
+        response.putAllPairs(remainingserverlist);
+        responseObserver.onNext(response.build());
+        responseObserver.onCompleted();
+    }
+
+
+    /**
+     * Clients request to remove server
+     * @param request is the request to remove a server
+     * @param responseObserver is the response for client to take a decision on removed server
+     */
+    @Override
+    public void removeServer(KeyValueStoreProcedures.BringServerDown request, StreamObserver<KeyValueStoreProcedures.Dictionary> responseObserver) {
+        //super.removeServer(request, responseObserver);
+        KeyValueStoreProcedures.Dictionary.Builder response = KeyValueStoreProcedures.Dictionary.newBuilder();
+
+        int targetserver=request.getServertobringdown();
+
+        if(remainingserverlist.isEmpty()){
+            //System.out.println("You called");
+            response.setMessage("Server List Empty");
+
+        }
+
+
+        //for (ConcurrentHashMap.Entry<Integer,Integer> i : remainingserverlist.entrySet()) {
+        else if(!remainingserverlist.containsValue(targetserver)){
+
+
+
+            response.putAllPairs(remainingserverlist).setMessage("Server Non Existent or Already Down");
+
+            for (ConcurrentHashMap.Entry<Integer,Integer> i : remainingserverlist.entrySet()) {
+                Integer value = i.getValue();
+                //System.out.println( "Server: " + value);
+            }
+            //break;
+        }
+        else if(remainingserverlist.containsValue(targetserver)){
+               remainingserverlist.values().remove(targetserver);
+            for (ConcurrentHashMap.Entry<Integer,Integer> i : remainingserverlist.entrySet()) {
+                Integer value = i.getValue();
+                //
+                // System.out.println( "Server: " + value);
+            }
+            response.putAllPairs(remainingserverlist).setMessage("Server Down");
+
+            //break;
+        }
+
+        //}
+
+
+        responseObserver.onNext(response.build());
+        responseObserver.onCompleted();
+
+    }
+
+    /**
+     *
+     * @param request
+     * @param responseObserver
+     */
+    @Override
+    public synchronized void namesOfClients(KeyValueStoreProcedures.GetNamesofClients request, StreamObserver<KeyValueStoreProcedures.ListofClients> responseObserver) {
+        //super.namesOfClients(request, responseObserver);
+
+        KeyValueStoreProcedures.ListofClients.Builder response = KeyValueStoreProcedures.ListofClients.newBuilder();
+
+        response.setMessage(clientListWithoutDuplicates.size());
+
+        responseObserver.onNext(response.build());
+        responseObserver.onCompleted();
+
+    }
+
+    /**
+     * Determine consensus in application
+     * @param request is the request to determine consensus
+     * @param responseObserver is the callback from server/acceptor to call with decision on consensus
+     */
+    @Override
+    public void consensus(KeyValueStoreProcedures.SendConsensus request, StreamObserver<KeyValueStoreProcedures.ClientConsensus> responseObserver) {
+        //super.consensus(request, responseObserver);
+        KeyValueStoreProcedures.ClientConsensus.Builder response = KeyValueStoreProcedures.ClientConsensus.newBuilder();
+
+
+        consensusFinalClientList.add(request.getClientname());
+        System.out.println("List with duplicates" + consensusFinalClientList.size());
+        LinkedHashSet<String> hashSet = new LinkedHashSet<>(consensusFinalClientList);
+        ArrayList<String> listWithoutDuplicates = new ArrayList<>(hashSet);
+
+
+            try {
+            Thread.currentThread().sleep(10000);
+
+                System.out.println("List without duplicates" + listWithoutDuplicates.size());
+
+
+                if(consensusFinalClientList.size() < 2) {
+
+                response.setMessage("Consensus Not Reached");
+                    listWithoutDuplicates.clear();
+
+            }
+
+            else if(listWithoutDuplicates.size() == 2) {
+
+                    response.setMessage(String.valueOf(consensusFinalClientList.size()));
+            }
+
+            else if(listWithoutDuplicates.size() > 2) {
+                    response.setMessage(String.valueOf(consensusFinalClientList.size()));
+
+                    consensusFinalClientList.clear();
+                   listWithoutDuplicates.clear();
+            }
+
+
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        responseObserver.onNext(response.build());
+        responseObserver.onCompleted();
+    }
+
+    /**
+     * Not used
+     * @param request
+     * @param responseObserver
+     */
     @Override
     public synchronized void acceptabortorcommit(KeyValueStoreProcedures.Abortorcommit request, StreamObserver<KeyValueStoreProcedures.SuccessfulAbort> responseObserver) {
         System.out.println("Inside acceptabortorcommit");

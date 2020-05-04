@@ -14,6 +14,8327 @@ public final class KeyValueStoreProcedures {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  public interface PermissionRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:PermissionRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    java.lang.String getClientname();
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientnameBytes();
+
+    /**
+     * <code>int32 suggestioninteger = 2;</code>
+     */
+    int getSuggestioninteger();
+
+    /**
+     * <code>string suggestionstring = 3;</code>
+     */
+    java.lang.String getSuggestionstring();
+    /**
+     * <code>string suggestionstring = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getSuggestionstringBytes();
+  }
+  /**
+   * Protobuf type {@code PermissionRequest}
+   */
+  public  static final class PermissionRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:PermissionRequest)
+      PermissionRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use PermissionRequest.newBuilder() to construct.
+    private PermissionRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PermissionRequest() {
+      clientname_ = "";
+      suggestioninteger_ = 0;
+      suggestionstring_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private PermissionRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientname_ = s;
+              break;
+            }
+            case 16: {
+
+              suggestioninteger_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              suggestionstring_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder.class);
+    }
+
+    public static final int CLIENTNAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object clientname_;
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    public java.lang.String getClientname() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientnameBytes() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SUGGESTIONINTEGER_FIELD_NUMBER = 2;
+    private int suggestioninteger_;
+    /**
+     * <code>int32 suggestioninteger = 2;</code>
+     */
+    public int getSuggestioninteger() {
+      return suggestioninteger_;
+    }
+
+    public static final int SUGGESTIONSTRING_FIELD_NUMBER = 3;
+    private volatile java.lang.Object suggestionstring_;
+    /**
+     * <code>string suggestionstring = 3;</code>
+     */
+    public java.lang.String getSuggestionstring() {
+      java.lang.Object ref = suggestionstring_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        suggestionstring_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string suggestionstring = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSuggestionstringBytes() {
+      java.lang.Object ref = suggestionstring_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        suggestionstring_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getClientnameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, clientname_);
+      }
+      if (suggestioninteger_ != 0) {
+        output.writeInt32(2, suggestioninteger_);
+      }
+      if (!getSuggestionstringBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, suggestionstring_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getClientnameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, clientname_);
+      }
+      if (suggestioninteger_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, suggestioninteger_);
+      }
+      if (!getSuggestionstringBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, suggestionstring_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest) obj;
+
+      boolean result = true;
+      result = result && getClientname()
+          .equals(other.getClientname());
+      result = result && (getSuggestioninteger()
+          == other.getSuggestioninteger());
+      result = result && getSuggestionstring()
+          .equals(other.getSuggestionstring());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getClientname().hashCode();
+      hash = (37 * hash) + SUGGESTIONINTEGER_FIELD_NUMBER;
+      hash = (53 * hash) + getSuggestioninteger();
+      hash = (37 * hash) + SUGGESTIONSTRING_FIELD_NUMBER;
+      hash = (53 * hash) + getSuggestionstring().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code PermissionRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:PermissionRequest)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        clientname_ = "";
+
+        suggestioninteger_ = 0;
+
+        suggestionstring_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest(this);
+        result.clientname_ = clientname_;
+        result.suggestioninteger_ = suggestioninteger_;
+        result.suggestionstring_ = suggestionstring_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.getDefaultInstance()) return this;
+        if (!other.getClientname().isEmpty()) {
+          clientname_ = other.clientname_;
+          onChanged();
+        }
+        if (other.getSuggestioninteger() != 0) {
+          setSuggestioninteger(other.getSuggestioninteger());
+        }
+        if (!other.getSuggestionstring().isEmpty()) {
+          suggestionstring_ = other.suggestionstring_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object clientname_ = "";
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public java.lang.String getClientname() {
+        java.lang.Object ref = clientname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientnameBytes() {
+        java.lang.Object ref = clientname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public Builder setClientname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public Builder clearClientname() {
+        
+        clientname_ = getDefaultInstance().getClientname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public Builder setClientnameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int suggestioninteger_ ;
+      /**
+       * <code>int32 suggestioninteger = 2;</code>
+       */
+      public int getSuggestioninteger() {
+        return suggestioninteger_;
+      }
+      /**
+       * <code>int32 suggestioninteger = 2;</code>
+       */
+      public Builder setSuggestioninteger(int value) {
+        
+        suggestioninteger_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 suggestioninteger = 2;</code>
+       */
+      public Builder clearSuggestioninteger() {
+        
+        suggestioninteger_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object suggestionstring_ = "";
+      /**
+       * <code>string suggestionstring = 3;</code>
+       */
+      public java.lang.String getSuggestionstring() {
+        java.lang.Object ref = suggestionstring_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          suggestionstring_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string suggestionstring = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSuggestionstringBytes() {
+        java.lang.Object ref = suggestionstring_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          suggestionstring_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string suggestionstring = 3;</code>
+       */
+      public Builder setSuggestionstring(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        suggestionstring_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string suggestionstring = 3;</code>
+       */
+      public Builder clearSuggestionstring() {
+        
+        suggestionstring_ = getDefaultInstance().getSuggestionstring();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string suggestionstring = 3;</code>
+       */
+      public Builder setSuggestionstringBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        suggestionstring_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:PermissionRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:PermissionRequest)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PermissionRequest>
+        PARSER = new com.google.protobuf.AbstractParser<PermissionRequest>() {
+      @java.lang.Override
+      public PermissionRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PermissionRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PermissionRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PermissionRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface PermissionGrantedorDeniedOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:PermissionGrantedorDenied)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.PermissionRequest permreq = 1;</code>
+     */
+    boolean hasPermreq();
+    /**
+     * <code>.PermissionRequest permreq = 1;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest getPermreq();
+    /**
+     * <code>.PermissionRequest permreq = 1;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequestOrBuilder getPermreqOrBuilder();
+
+    /**
+     * <code>int32 message = 2;</code>
+     */
+    int getMessage();
+
+    /**
+     * <code>string clientname = 3;</code>
+     */
+    java.lang.String getClientname();
+    /**
+     * <code>string clientname = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientnameBytes();
+
+    /**
+     * <code>int32 suggestionint = 4;</code>
+     */
+    int getSuggestionint();
+
+    /**
+     * <code>string suggestionstr = 5;</code>
+     */
+    java.lang.String getSuggestionstr();
+    /**
+     * <code>string suggestionstr = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getSuggestionstrBytes();
+  }
+  /**
+   * Protobuf type {@code PermissionGrantedorDenied}
+   */
+  public  static final class PermissionGrantedorDenied extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:PermissionGrantedorDenied)
+      PermissionGrantedorDeniedOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use PermissionGrantedorDenied.newBuilder() to construct.
+    private PermissionGrantedorDenied(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PermissionGrantedorDenied() {
+      message_ = 0;
+      clientname_ = "";
+      suggestionint_ = 0;
+      suggestionstr_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private PermissionGrantedorDenied(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder subBuilder = null;
+              if (permreq_ != null) {
+                subBuilder = permreq_.toBuilder();
+              }
+              permreq_ = input.readMessage(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(permreq_);
+                permreq_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 16: {
+
+              message_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientname_ = s;
+              break;
+            }
+            case 32: {
+
+              suggestionint_ = input.readInt32();
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              suggestionstr_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionGrantedorDenied_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionGrantedorDenied_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied.Builder.class);
+    }
+
+    public static final int PERMREQ_FIELD_NUMBER = 1;
+    private com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest permreq_;
+    /**
+     * <code>.PermissionRequest permreq = 1;</code>
+     */
+    public boolean hasPermreq() {
+      return permreq_ != null;
+    }
+    /**
+     * <code>.PermissionRequest permreq = 1;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest getPermreq() {
+      return permreq_ == null ? com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.getDefaultInstance() : permreq_;
+    }
+    /**
+     * <code>.PermissionRequest permreq = 1;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequestOrBuilder getPermreqOrBuilder() {
+      return getPermreq();
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private int message_;
+    /**
+     * <code>int32 message = 2;</code>
+     */
+    public int getMessage() {
+      return message_;
+    }
+
+    public static final int CLIENTNAME_FIELD_NUMBER = 3;
+    private volatile java.lang.Object clientname_;
+    /**
+     * <code>string clientname = 3;</code>
+     */
+    public java.lang.String getClientname() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string clientname = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientnameBytes() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SUGGESTIONINT_FIELD_NUMBER = 4;
+    private int suggestionint_;
+    /**
+     * <code>int32 suggestionint = 4;</code>
+     */
+    public int getSuggestionint() {
+      return suggestionint_;
+    }
+
+    public static final int SUGGESTIONSTR_FIELD_NUMBER = 5;
+    private volatile java.lang.Object suggestionstr_;
+    /**
+     * <code>string suggestionstr = 5;</code>
+     */
+    public java.lang.String getSuggestionstr() {
+      java.lang.Object ref = suggestionstr_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        suggestionstr_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string suggestionstr = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSuggestionstrBytes() {
+      java.lang.Object ref = suggestionstr_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        suggestionstr_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (permreq_ != null) {
+        output.writeMessage(1, getPermreq());
+      }
+      if (message_ != 0) {
+        output.writeInt32(2, message_);
+      }
+      if (!getClientnameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, clientname_);
+      }
+      if (suggestionint_ != 0) {
+        output.writeInt32(4, suggestionint_);
+      }
+      if (!getSuggestionstrBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, suggestionstr_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (permreq_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getPermreq());
+      }
+      if (message_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, message_);
+      }
+      if (!getClientnameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, clientname_);
+      }
+      if (suggestionint_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, suggestionint_);
+      }
+      if (!getSuggestionstrBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, suggestionstr_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied) obj;
+
+      boolean result = true;
+      result = result && (hasPermreq() == other.hasPermreq());
+      if (hasPermreq()) {
+        result = result && getPermreq()
+            .equals(other.getPermreq());
+      }
+      result = result && (getMessage()
+          == other.getMessage());
+      result = result && getClientname()
+          .equals(other.getClientname());
+      result = result && (getSuggestionint()
+          == other.getSuggestionint());
+      result = result && getSuggestionstr()
+          .equals(other.getSuggestionstr());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasPermreq()) {
+        hash = (37 * hash) + PERMREQ_FIELD_NUMBER;
+        hash = (53 * hash) + getPermreq().hashCode();
+      }
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage();
+      hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getClientname().hashCode();
+      hash = (37 * hash) + SUGGESTIONINT_FIELD_NUMBER;
+      hash = (53 * hash) + getSuggestionint();
+      hash = (37 * hash) + SUGGESTIONSTR_FIELD_NUMBER;
+      hash = (53 * hash) + getSuggestionstr().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code PermissionGrantedorDenied}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:PermissionGrantedorDenied)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDeniedOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionGrantedorDenied_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionGrantedorDenied_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (permreqBuilder_ == null) {
+          permreq_ = null;
+        } else {
+          permreq_ = null;
+          permreqBuilder_ = null;
+        }
+        message_ = 0;
+
+        clientname_ = "";
+
+        suggestionint_ = 0;
+
+        suggestionstr_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_PermissionGrantedorDenied_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied(this);
+        if (permreqBuilder_ == null) {
+          result.permreq_ = permreq_;
+        } else {
+          result.permreq_ = permreqBuilder_.build();
+        }
+        result.message_ = message_;
+        result.clientname_ = clientname_;
+        result.suggestionint_ = suggestionint_;
+        result.suggestionstr_ = suggestionstr_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied.getDefaultInstance()) return this;
+        if (other.hasPermreq()) {
+          mergePermreq(other.getPermreq());
+        }
+        if (other.getMessage() != 0) {
+          setMessage(other.getMessage());
+        }
+        if (!other.getClientname().isEmpty()) {
+          clientname_ = other.clientname_;
+          onChanged();
+        }
+        if (other.getSuggestionint() != 0) {
+          setSuggestionint(other.getSuggestionint());
+        }
+        if (!other.getSuggestionstr().isEmpty()) {
+          suggestionstr_ = other.suggestionstr_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest permreq_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequestOrBuilder> permreqBuilder_;
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public boolean hasPermreq() {
+        return permreqBuilder_ != null || permreq_ != null;
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest getPermreq() {
+        if (permreqBuilder_ == null) {
+          return permreq_ == null ? com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.getDefaultInstance() : permreq_;
+        } else {
+          return permreqBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public Builder setPermreq(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest value) {
+        if (permreqBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          permreq_ = value;
+          onChanged();
+        } else {
+          permreqBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public Builder setPermreq(
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder builderForValue) {
+        if (permreqBuilder_ == null) {
+          permreq_ = builderForValue.build();
+          onChanged();
+        } else {
+          permreqBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public Builder mergePermreq(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest value) {
+        if (permreqBuilder_ == null) {
+          if (permreq_ != null) {
+            permreq_ =
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.newBuilder(permreq_).mergeFrom(value).buildPartial();
+          } else {
+            permreq_ = value;
+          }
+          onChanged();
+        } else {
+          permreqBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public Builder clearPermreq() {
+        if (permreqBuilder_ == null) {
+          permreq_ = null;
+          onChanged();
+        } else {
+          permreq_ = null;
+          permreqBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder getPermreqBuilder() {
+        
+        onChanged();
+        return getPermreqFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequestOrBuilder getPermreqOrBuilder() {
+        if (permreqBuilder_ != null) {
+          return permreqBuilder_.getMessageOrBuilder();
+        } else {
+          return permreq_ == null ?
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.getDefaultInstance() : permreq_;
+        }
+      }
+      /**
+       * <code>.PermissionRequest permreq = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequestOrBuilder> 
+          getPermreqFieldBuilder() {
+        if (permreqBuilder_ == null) {
+          permreqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequest.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionRequestOrBuilder>(
+                  getPermreq(),
+                  getParentForChildren(),
+                  isClean());
+          permreq_ = null;
+        }
+        return permreqBuilder_;
+      }
+
+      private int message_ ;
+      /**
+       * <code>int32 message = 2;</code>
+       */
+      public int getMessage() {
+        return message_;
+      }
+      /**
+       * <code>int32 message = 2;</code>
+       */
+      public Builder setMessage(int value) {
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 message = 2;</code>
+       */
+      public Builder clearMessage() {
+        
+        message_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object clientname_ = "";
+      /**
+       * <code>string clientname = 3;</code>
+       */
+      public java.lang.String getClientname() {
+        java.lang.Object ref = clientname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientnameBytes() {
+        java.lang.Object ref = clientname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 3;</code>
+       */
+      public Builder setClientname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 3;</code>
+       */
+      public Builder clearClientname() {
+        
+        clientname_ = getDefaultInstance().getClientname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 3;</code>
+       */
+      public Builder setClientnameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int suggestionint_ ;
+      /**
+       * <code>int32 suggestionint = 4;</code>
+       */
+      public int getSuggestionint() {
+        return suggestionint_;
+      }
+      /**
+       * <code>int32 suggestionint = 4;</code>
+       */
+      public Builder setSuggestionint(int value) {
+        
+        suggestionint_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 suggestionint = 4;</code>
+       */
+      public Builder clearSuggestionint() {
+        
+        suggestionint_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object suggestionstr_ = "";
+      /**
+       * <code>string suggestionstr = 5;</code>
+       */
+      public java.lang.String getSuggestionstr() {
+        java.lang.Object ref = suggestionstr_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          suggestionstr_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string suggestionstr = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSuggestionstrBytes() {
+        java.lang.Object ref = suggestionstr_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          suggestionstr_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string suggestionstr = 5;</code>
+       */
+      public Builder setSuggestionstr(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        suggestionstr_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string suggestionstr = 5;</code>
+       */
+      public Builder clearSuggestionstr() {
+        
+        suggestionstr_ = getDefaultInstance().getSuggestionstr();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string suggestionstr = 5;</code>
+       */
+      public Builder setSuggestionstrBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        suggestionstr_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:PermissionGrantedorDenied)
+    }
+
+    // @@protoc_insertion_point(class_scope:PermissionGrantedorDenied)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PermissionGrantedorDenied>
+        PARSER = new com.google.protobuf.AbstractParser<PermissionGrantedorDenied>() {
+      @java.lang.Override
+      public PermissionGrantedorDenied parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PermissionGrantedorDenied(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PermissionGrantedorDenied> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PermissionGrantedorDenied> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.PermissionGrantedorDenied getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SendConsensusOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SendConsensus)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    java.lang.String getClientname();
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientnameBytes();
+  }
+  /**
+   * Protobuf type {@code SendConsensus}
+   */
+  public  static final class SendConsensus extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SendConsensus)
+      SendConsensusOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SendConsensus.newBuilder() to construct.
+    private SendConsensus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SendConsensus() {
+      clientname_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SendConsensus(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientname_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SendConsensus_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SendConsensus_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus.Builder.class);
+    }
+
+    public static final int CLIENTNAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object clientname_;
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    public java.lang.String getClientname() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string clientname = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientnameBytes() {
+      java.lang.Object ref = clientname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getClientnameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, clientname_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getClientnameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, clientname_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus) obj;
+
+      boolean result = true;
+      result = result && getClientname()
+          .equals(other.getClientname());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getClientname().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SendConsensus}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SendConsensus)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensusOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SendConsensus_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SendConsensus_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        clientname_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_SendConsensus_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus(this);
+        result.clientname_ = clientname_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus.getDefaultInstance()) return this;
+        if (!other.getClientname().isEmpty()) {
+          clientname_ = other.clientname_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object clientname_ = "";
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public java.lang.String getClientname() {
+        java.lang.Object ref = clientname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientnameBytes() {
+        java.lang.Object ref = clientname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public Builder setClientname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public Builder clearClientname() {
+        
+        clientname_ = getDefaultInstance().getClientname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientname = 1;</code>
+       */
+      public Builder setClientnameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientname_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SendConsensus)
+    }
+
+    // @@protoc_insertion_point(class_scope:SendConsensus)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SendConsensus>
+        PARSER = new com.google.protobuf.AbstractParser<SendConsensus>() {
+      @java.lang.Override
+      public SendConsensus parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SendConsensus(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SendConsensus> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SendConsensus> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendConsensus getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ClientConsensusOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ClientConsensus)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    java.util.List<java.lang.String>
+        getClientnamesList();
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    int getClientnamesCount();
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    java.lang.String getClientnames(int index);
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientnamesBytes(int index);
+
+    /**
+     * <code>string message = 2;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>string message = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+  }
+  /**
+   * Protobuf type {@code ClientConsensus}
+   */
+  public  static final class ClientConsensus extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ClientConsensus)
+      ClientConsensusOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ClientConsensus.newBuilder() to construct.
+    private ClientConsensus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ClientConsensus() {
+      clientnames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      message_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ClientConsensus(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                clientnames_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              clientnames_.add(s);
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              message_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          clientnames_ = clientnames_.getUnmodifiableView();
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ClientConsensus_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ClientConsensus_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int CLIENTNAMES_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList clientnames_;
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getClientnamesList() {
+      return clientnames_;
+    }
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    public int getClientnamesCount() {
+      return clientnames_.size();
+    }
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    public java.lang.String getClientnames(int index) {
+      return clientnames_.get(index);
+    }
+    /**
+     * <code>repeated string clientnames = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientnamesBytes(int index) {
+      return clientnames_.getByteString(index);
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private volatile java.lang.Object message_;
+    /**
+     * <code>string message = 2;</code>
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        message_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string message = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < clientnames_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, clientnames_.getRaw(i));
+      }
+      if (!getMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < clientnames_.size(); i++) {
+          dataSize += computeStringSizeNoTag(clientnames_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getClientnamesList().size();
+      }
+      if (!getMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus) obj;
+
+      boolean result = true;
+      result = result && getClientnamesList()
+          .equals(other.getClientnamesList());
+      result = result && getMessage()
+          .equals(other.getMessage());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getClientnamesCount() > 0) {
+        hash = (37 * hash) + CLIENTNAMES_FIELD_NUMBER;
+        hash = (53 * hash) + getClientnamesList().hashCode();
+      }
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ClientConsensus}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ClientConsensus)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensusOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ClientConsensus_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ClientConsensus_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        clientnames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ClientConsensus_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          clientnames_ = clientnames_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.clientnames_ = clientnames_;
+        result.message_ = message_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus.getDefaultInstance()) return this;
+        if (!other.clientnames_.isEmpty()) {
+          if (clientnames_.isEmpty()) {
+            clientnames_ = other.clientnames_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureClientnamesIsMutable();
+            clientnames_.addAll(other.clientnames_);
+          }
+          onChanged();
+        }
+        if (!other.getMessage().isEmpty()) {
+          message_ = other.message_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.LazyStringList clientnames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureClientnamesIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          clientnames_ = new com.google.protobuf.LazyStringArrayList(clientnames_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getClientnamesList() {
+        return clientnames_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public int getClientnamesCount() {
+        return clientnames_.size();
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public java.lang.String getClientnames(int index) {
+        return clientnames_.get(index);
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientnamesBytes(int index) {
+        return clientnames_.getByteString(index);
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public Builder setClientnames(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureClientnamesIsMutable();
+        clientnames_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public Builder addClientnames(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureClientnamesIsMutable();
+        clientnames_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public Builder addAllClientnames(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureClientnamesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, clientnames_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public Builder clearClientnames() {
+        clientnames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clientnames = 1;</code>
+       */
+      public Builder addClientnamesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureClientnamesIsMutable();
+        clientnames_.add(value);
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>string message = 2;</code>
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public Builder clearMessage() {
+        
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ClientConsensus)
+    }
+
+    // @@protoc_insertion_point(class_scope:ClientConsensus)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ClientConsensus>
+        PARSER = new com.google.protobuf.AbstractParser<ClientConsensus>() {
+      @java.lang.Override
+      public ClientConsensus parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ClientConsensus(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ClientConsensus> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ClientConsensus> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ClientConsensus getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ServerShutdownOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ServerShutdown)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 servername = 1;</code>
+     */
+    int getServername();
+  }
+  /**
+   * Protobuf type {@code ServerShutdown}
+   */
+  public  static final class ServerShutdown extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ServerShutdown)
+      ServerShutdownOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ServerShutdown.newBuilder() to construct.
+    private ServerShutdown(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ServerShutdown() {
+      servername_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ServerShutdown(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              servername_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerShutdown_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerShutdown_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown.Builder.class);
+    }
+
+    public static final int SERVERNAME_FIELD_NUMBER = 1;
+    private int servername_;
+    /**
+     * <code>int32 servername = 1;</code>
+     */
+    public int getServername() {
+      return servername_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (servername_ != 0) {
+        output.writeInt32(1, servername_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (servername_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, servername_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown) obj;
+
+      boolean result = true;
+      result = result && (getServername()
+          == other.getServername());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SERVERNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getServername();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ServerShutdown}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ServerShutdown)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdownOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerShutdown_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerShutdown_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        servername_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerShutdown_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown(this);
+        result.servername_ = servername_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown.getDefaultInstance()) return this;
+        if (other.getServername() != 0) {
+          setServername(other.getServername());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int servername_ ;
+      /**
+       * <code>int32 servername = 1;</code>
+       */
+      public int getServername() {
+        return servername_;
+      }
+      /**
+       * <code>int32 servername = 1;</code>
+       */
+      public Builder setServername(int value) {
+        
+        servername_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 servername = 1;</code>
+       */
+      public Builder clearServername() {
+        
+        servername_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ServerShutdown)
+    }
+
+    // @@protoc_insertion_point(class_scope:ServerShutdown)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ServerShutdown>
+        PARSER = new com.google.protobuf.AbstractParser<ServerShutdown>() {
+      @java.lang.Override
+      public ServerShutdown parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ServerShutdown(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ServerShutdown> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ServerShutdown> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerShutdown getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface BringServerDownOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:BringServerDown)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 servertobringdown = 1;</code>
+     */
+    int getServertobringdown();
+  }
+  /**
+   * Protobuf type {@code BringServerDown}
+   */
+  public  static final class BringServerDown extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:BringServerDown)
+      BringServerDownOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use BringServerDown.newBuilder() to construct.
+    private BringServerDown(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private BringServerDown() {
+      servertobringdown_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private BringServerDown(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              servertobringdown_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_BringServerDown_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_BringServerDown_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown.Builder.class);
+    }
+
+    public static final int SERVERTOBRINGDOWN_FIELD_NUMBER = 1;
+    private int servertobringdown_;
+    /**
+     * <code>int32 servertobringdown = 1;</code>
+     */
+    public int getServertobringdown() {
+      return servertobringdown_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (servertobringdown_ != 0) {
+        output.writeInt32(1, servertobringdown_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (servertobringdown_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, servertobringdown_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown) obj;
+
+      boolean result = true;
+      result = result && (getServertobringdown()
+          == other.getServertobringdown());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SERVERTOBRINGDOWN_FIELD_NUMBER;
+      hash = (53 * hash) + getServertobringdown();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code BringServerDown}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:BringServerDown)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDownOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_BringServerDown_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_BringServerDown_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        servertobringdown_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_BringServerDown_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown(this);
+        result.servertobringdown_ = servertobringdown_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown.getDefaultInstance()) return this;
+        if (other.getServertobringdown() != 0) {
+          setServertobringdown(other.getServertobringdown());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int servertobringdown_ ;
+      /**
+       * <code>int32 servertobringdown = 1;</code>
+       */
+      public int getServertobringdown() {
+        return servertobringdown_;
+      }
+      /**
+       * <code>int32 servertobringdown = 1;</code>
+       */
+      public Builder setServertobringdown(int value) {
+        
+        servertobringdown_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 servertobringdown = 1;</code>
+       */
+      public Builder clearServertobringdown() {
+        
+        servertobringdown_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:BringServerDown)
+    }
+
+    // @@protoc_insertion_point(class_scope:BringServerDown)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<BringServerDown>
+        PARSER = new com.google.protobuf.AbstractParser<BringServerDown>() {
+      @java.lang.Override
+      public BringServerDown parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new BringServerDown(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<BringServerDown> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BringServerDown> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.BringServerDown getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface RequestListofServersOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RequestListofServers)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string listofservers = 1;</code>
+     */
+    java.lang.String getListofservers();
+    /**
+     * <code>string listofservers = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getListofserversBytes();
+  }
+  /**
+   * Protobuf type {@code RequestListofServers}
+   */
+  public  static final class RequestListofServers extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:RequestListofServers)
+      RequestListofServersOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use RequestListofServers.newBuilder() to construct.
+    private RequestListofServers(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private RequestListofServers() {
+      listofservers_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RequestListofServers(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              listofservers_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_RequestListofServers_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_RequestListofServers_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers.Builder.class);
+    }
+
+    public static final int LISTOFSERVERS_FIELD_NUMBER = 1;
+    private volatile java.lang.Object listofservers_;
+    /**
+     * <code>string listofservers = 1;</code>
+     */
+    public java.lang.String getListofservers() {
+      java.lang.Object ref = listofservers_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        listofservers_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string listofservers = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getListofserversBytes() {
+      java.lang.Object ref = listofservers_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        listofservers_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getListofserversBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, listofservers_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getListofserversBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, listofservers_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers) obj;
+
+      boolean result = true;
+      result = result && getListofservers()
+          .equals(other.getListofservers());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LISTOFSERVERS_FIELD_NUMBER;
+      hash = (53 * hash) + getListofservers().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code RequestListofServers}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RequestListofServers)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServersOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_RequestListofServers_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_RequestListofServers_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        listofservers_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_RequestListofServers_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers(this);
+        result.listofservers_ = listofservers_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers.getDefaultInstance()) return this;
+        if (!other.getListofservers().isEmpty()) {
+          listofservers_ = other.listofservers_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object listofservers_ = "";
+      /**
+       * <code>string listofservers = 1;</code>
+       */
+      public java.lang.String getListofservers() {
+        java.lang.Object ref = listofservers_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          listofservers_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string listofservers = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getListofserversBytes() {
+        java.lang.Object ref = listofservers_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          listofservers_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string listofservers = 1;</code>
+       */
+      public Builder setListofservers(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        listofservers_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string listofservers = 1;</code>
+       */
+      public Builder clearListofservers() {
+        
+        listofservers_ = getDefaultInstance().getListofservers();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string listofservers = 1;</code>
+       */
+      public Builder setListofserversBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        listofservers_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:RequestListofServers)
+    }
+
+    // @@protoc_insertion_point(class_scope:RequestListofServers)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<RequestListofServers>
+        PARSER = new com.google.protobuf.AbstractParser<RequestListofServers>() {
+      @java.lang.Override
+      public RequestListofServers parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RequestListofServers(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<RequestListofServers> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RequestListofServers> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.RequestListofServers getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface DictionaryOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Dictionary)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+    int getPairsCount();
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+    boolean containsPairs(
+        int key);
+    /**
+     * Use {@link #getPairsMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getPairs();
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getPairsMap();
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+
+    int getPairsOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+
+    int getPairsOrThrow(
+        int key);
+
+    /**
+     * <code>string message = 2;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>string message = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+    int getDroppedserverCount();
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+    boolean containsDroppedserver(
+        int key);
+    /**
+     * Use {@link #getDroppedserverMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getDroppedserver();
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getDroppedserverMap();
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+
+    int getDroppedserverOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+
+    int getDroppedserverOrThrow(
+        int key);
+  }
+  /**
+   * Protobuf type {@code Dictionary}
+   */
+  public  static final class Dictionary extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:Dictionary)
+      DictionaryOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Dictionary.newBuilder() to construct.
+    private Dictionary(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Dictionary() {
+      message_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Dictionary(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                pairs_ = com.google.protobuf.MapField.newMapField(
+                    PairsDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              pairs__ = input.readMessage(
+                  PairsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              pairs_.getMutableMap().put(
+                  pairs__.getKey(), pairs__.getValue());
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              message_ = s;
+              break;
+            }
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                droppedserver_ = com.google.protobuf.MapField.newMapField(
+                    DroppedserverDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000004;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              droppedserver__ = input.readMessage(
+                  DroppedserverDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              droppedserver_.getMutableMap().put(
+                  droppedserver__.getKey(), droppedserver__.getValue());
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Dictionary_descriptor;
+    }
+
+    @SuppressWarnings({"rawtypes"})
+    @java.lang.Override
+    protected com.google.protobuf.MapField internalGetMapField(
+        int number) {
+      switch (number) {
+        case 1:
+          return internalGetPairs();
+        case 3:
+          return internalGetDroppedserver();
+        default:
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
+      }
+    }
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Dictionary_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int PAIRS_FIELD_NUMBER = 1;
+    private static final class PairsDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Dictionary_PairsEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.INT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.INT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> pairs_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetPairs() {
+      if (pairs_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            PairsDefaultEntryHolder.defaultEntry);
+      }
+      return pairs_;
+    }
+
+    public int getPairsCount() {
+      return internalGetPairs().getMap().size();
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+
+    public boolean containsPairs(
+        int key) {
+      
+      return internalGetPairs().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getPairsMap()} instead.
+     */
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getPairs() {
+      return getPairsMap();
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getPairsMap() {
+      return internalGetPairs().getMap();
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+
+    public int getPairsOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetPairs().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+     */
+
+    public int getPairsOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetPairs().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private volatile java.lang.Object message_;
+    /**
+     * <code>string message = 2;</code>
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        message_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string message = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int DROPPEDSERVER_FIELD_NUMBER = 3;
+    private static final class DroppedserverDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Dictionary_DroppedserverEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.INT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.INT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> droppedserver_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetDroppedserver() {
+      if (droppedserver_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            DroppedserverDefaultEntryHolder.defaultEntry);
+      }
+      return droppedserver_;
+    }
+
+    public int getDroppedserverCount() {
+      return internalGetDroppedserver().getMap().size();
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+
+    public boolean containsDroppedserver(
+        int key) {
+      
+      return internalGetDroppedserver().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getDroppedserverMap()} instead.
+     */
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getDroppedserver() {
+      return getDroppedserverMap();
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getDroppedserverMap() {
+      return internalGetDroppedserver().getMap();
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+
+    public int getDroppedserverOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetDroppedserver().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+     */
+
+    public int getDroppedserverOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetDroppedserver().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetPairs(),
+          PairsDefaultEntryHolder.defaultEntry,
+          1);
+      if (!getMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetDroppedserver(),
+          DroppedserverDefaultEntryHolder.defaultEntry,
+          3);
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetPairs().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        pairs__ = PairsDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(1, pairs__);
+      }
+      if (!getMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetDroppedserver().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        droppedserver__ = DroppedserverDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(3, droppedserver__);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary) obj;
+
+      boolean result = true;
+      result = result && internalGetPairs().equals(
+          other.internalGetPairs());
+      result = result && getMessage()
+          .equals(other.getMessage());
+      result = result && internalGetDroppedserver().equals(
+          other.internalGetDroppedserver());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (!internalGetPairs().getMap().isEmpty()) {
+        hash = (37 * hash) + PAIRS_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetPairs().hashCode();
+      }
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage().hashCode();
+      if (!internalGetDroppedserver().getMap().isEmpty()) {
+        hash = (37 * hash) + DROPPEDSERVER_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetDroppedserver().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code Dictionary}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:Dictionary)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.DictionaryOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Dictionary_descriptor;
+      }
+
+      @SuppressWarnings({"rawtypes"})
+      protected com.google.protobuf.MapField internalGetMapField(
+          int number) {
+        switch (number) {
+          case 1:
+            return internalGetPairs();
+          case 3:
+            return internalGetDroppedserver();
+          default:
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
+        }
+      }
+      @SuppressWarnings({"rawtypes"})
+      protected com.google.protobuf.MapField internalGetMutableMapField(
+          int number) {
+        switch (number) {
+          case 1:
+            return internalGetMutablePairs();
+          case 3:
+            return internalGetMutableDroppedserver();
+          default:
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
+        }
+      }
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Dictionary_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        internalGetMutablePairs().clear();
+        message_ = "";
+
+        internalGetMutableDroppedserver().clear();
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_Dictionary_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        result.pairs_ = internalGetPairs();
+        result.pairs_.makeImmutable();
+        result.message_ = message_;
+        result.droppedserver_ = internalGetDroppedserver();
+        result.droppedserver_.makeImmutable();
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary.getDefaultInstance()) return this;
+        internalGetMutablePairs().mergeFrom(
+            other.internalGetPairs());
+        if (!other.getMessage().isEmpty()) {
+          message_ = other.message_;
+          onChanged();
+        }
+        internalGetMutableDroppedserver().mergeFrom(
+            other.internalGetDroppedserver());
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> pairs_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetPairs() {
+        if (pairs_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              PairsDefaultEntryHolder.defaultEntry);
+        }
+        return pairs_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutablePairs() {
+        onChanged();;
+        if (pairs_ == null) {
+          pairs_ = com.google.protobuf.MapField.newMapField(
+              PairsDefaultEntryHolder.defaultEntry);
+        }
+        if (!pairs_.isMutable()) {
+          pairs_ = pairs_.copy();
+        }
+        return pairs_;
+      }
+
+      public int getPairsCount() {
+        return internalGetPairs().getMap().size();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+       */
+
+      public boolean containsPairs(
+          int key) {
+        
+        return internalGetPairs().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getPairsMap()} instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getPairs() {
+        return getPairsMap();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+       */
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getPairsMap() {
+        return internalGetPairs().getMap();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+       */
+
+      public int getPairsOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetPairs().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+       */
+
+      public int getPairsOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetPairs().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearPairs() {
+        internalGetMutablePairs().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+       */
+
+      public Builder removePairs(
+          int key) {
+        
+        internalGetMutablePairs().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutablePairs() {
+        return internalGetMutablePairs().getMutableMap();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+       */
+      public Builder putPairs(
+          int key,
+          int value) {
+        
+        
+        internalGetMutablePairs().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; pairs = 1;</code>
+       */
+
+      public Builder putAllPairs(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutablePairs().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>string message = 2;</code>
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public Builder clearMessage() {
+        
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 2;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> droppedserver_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetDroppedserver() {
+        if (droppedserver_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              DroppedserverDefaultEntryHolder.defaultEntry);
+        }
+        return droppedserver_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableDroppedserver() {
+        onChanged();;
+        if (droppedserver_ == null) {
+          droppedserver_ = com.google.protobuf.MapField.newMapField(
+              DroppedserverDefaultEntryHolder.defaultEntry);
+        }
+        if (!droppedserver_.isMutable()) {
+          droppedserver_ = droppedserver_.copy();
+        }
+        return droppedserver_;
+      }
+
+      public int getDroppedserverCount() {
+        return internalGetDroppedserver().getMap().size();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+       */
+
+      public boolean containsDroppedserver(
+          int key) {
+        
+        return internalGetDroppedserver().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getDroppedserverMap()} instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getDroppedserver() {
+        return getDroppedserverMap();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+       */
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getDroppedserverMap() {
+        return internalGetDroppedserver().getMap();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+       */
+
+      public int getDroppedserverOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetDroppedserver().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+       */
+
+      public int getDroppedserverOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetDroppedserver().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearDroppedserver() {
+        internalGetMutableDroppedserver().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+       */
+
+      public Builder removeDroppedserver(
+          int key) {
+        
+        internalGetMutableDroppedserver().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableDroppedserver() {
+        return internalGetMutableDroppedserver().getMutableMap();
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+       */
+      public Builder putDroppedserver(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableDroppedserver().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;int32, int32&gt; droppedserver = 3;</code>
+       */
+
+      public Builder putAllDroppedserver(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableDroppedserver().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:Dictionary)
+    }
+
+    // @@protoc_insertion_point(class_scope:Dictionary)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Dictionary>
+        PARSER = new com.google.protobuf.AbstractParser<Dictionary>() {
+      @java.lang.Override
+      public Dictionary parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Dictionary(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Dictionary> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Dictionary> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.Dictionary getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ListofServersOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ListofServers)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     *ist field is no longer needed
+     * </pre>
+     *
+     * <code>int32 listofservers = 1;</code>
+     */
+    int getListofservers();
+
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    java.util.List<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair> 
+        getServersleftList();
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair getServersleft(int index);
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    int getServersleftCount();
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    java.util.List<? extends com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder> 
+        getServersleftOrBuilderList();
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder getServersleftOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code ListofServers}
+   */
+  public  static final class ListofServers extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ListofServers)
+      ListofServersOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ListofServers.newBuilder() to construct.
+    private ListofServers(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ListofServers() {
+      listofservers_ = 0;
+      serversleft_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ListofServers(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              listofservers_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                serversleft_ = new java.util.ArrayList<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              serversleft_.add(
+                  input.readMessage(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          serversleft_ = java.util.Collections.unmodifiableList(serversleft_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofServers_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofServers_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int LISTOFSERVERS_FIELD_NUMBER = 1;
+    private int listofservers_;
+    /**
+     * <pre>
+     *ist field is no longer needed
+     * </pre>
+     *
+     * <code>int32 listofservers = 1;</code>
+     */
+    public int getListofservers() {
+      return listofservers_;
+    }
+
+    public static final int SERVERSLEFT_FIELD_NUMBER = 2;
+    private java.util.List<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair> serversleft_;
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    public java.util.List<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair> getServersleftList() {
+      return serversleft_;
+    }
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    public java.util.List<? extends com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder> 
+        getServersleftOrBuilderList() {
+      return serversleft_;
+    }
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    public int getServersleftCount() {
+      return serversleft_.size();
+    }
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair getServersleft(int index) {
+      return serversleft_.get(index);
+    }
+    /**
+     * <code>repeated .ServerPair serversleft = 2;</code>
+     */
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder getServersleftOrBuilder(
+        int index) {
+      return serversleft_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (listofservers_ != 0) {
+        output.writeInt32(1, listofservers_);
+      }
+      for (int i = 0; i < serversleft_.size(); i++) {
+        output.writeMessage(2, serversleft_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (listofservers_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, listofservers_);
+      }
+      for (int i = 0; i < serversleft_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, serversleft_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers) obj;
+
+      boolean result = true;
+      result = result && (getListofservers()
+          == other.getListofservers());
+      result = result && getServersleftList()
+          .equals(other.getServersleftList());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LISTOFSERVERS_FIELD_NUMBER;
+      hash = (53 * hash) + getListofservers();
+      if (getServersleftCount() > 0) {
+        hash = (37 * hash) + SERVERSLEFT_FIELD_NUMBER;
+        hash = (53 * hash) + getServersleftList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ListofServers}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ListofServers)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServersOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofServers_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofServers_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getServersleftFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        listofservers_ = 0;
+
+        if (serversleftBuilder_ == null) {
+          serversleft_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          serversleftBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofServers_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        result.listofservers_ = listofservers_;
+        if (serversleftBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            serversleft_ = java.util.Collections.unmodifiableList(serversleft_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.serversleft_ = serversleft_;
+        } else {
+          result.serversleft_ = serversleftBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers.getDefaultInstance()) return this;
+        if (other.getListofservers() != 0) {
+          setListofservers(other.getListofservers());
+        }
+        if (serversleftBuilder_ == null) {
+          if (!other.serversleft_.isEmpty()) {
+            if (serversleft_.isEmpty()) {
+              serversleft_ = other.serversleft_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureServersleftIsMutable();
+              serversleft_.addAll(other.serversleft_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.serversleft_.isEmpty()) {
+            if (serversleftBuilder_.isEmpty()) {
+              serversleftBuilder_.dispose();
+              serversleftBuilder_ = null;
+              serversleft_ = other.serversleft_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              serversleftBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getServersleftFieldBuilder() : null;
+            } else {
+              serversleftBuilder_.addAllMessages(other.serversleft_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int listofservers_ ;
+      /**
+       * <pre>
+       *ist field is no longer needed
+       * </pre>
+       *
+       * <code>int32 listofservers = 1;</code>
+       */
+      public int getListofservers() {
+        return listofservers_;
+      }
+      /**
+       * <pre>
+       *ist field is no longer needed
+       * </pre>
+       *
+       * <code>int32 listofservers = 1;</code>
+       */
+      public Builder setListofservers(int value) {
+        
+        listofservers_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *ist field is no longer needed
+       * </pre>
+       *
+       * <code>int32 listofservers = 1;</code>
+       */
+      public Builder clearListofservers() {
+        
+        listofservers_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair> serversleft_ =
+        java.util.Collections.emptyList();
+      private void ensureServersleftIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          serversleft_ = new java.util.ArrayList<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair>(serversleft_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder> serversleftBuilder_;
+
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public java.util.List<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair> getServersleftList() {
+        if (serversleftBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(serversleft_);
+        } else {
+          return serversleftBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public int getServersleftCount() {
+        if (serversleftBuilder_ == null) {
+          return serversleft_.size();
+        } else {
+          return serversleftBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair getServersleft(int index) {
+        if (serversleftBuilder_ == null) {
+          return serversleft_.get(index);
+        } else {
+          return serversleftBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder setServersleft(
+          int index, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair value) {
+        if (serversleftBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureServersleftIsMutable();
+          serversleft_.set(index, value);
+          onChanged();
+        } else {
+          serversleftBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder setServersleft(
+          int index, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder builderForValue) {
+        if (serversleftBuilder_ == null) {
+          ensureServersleftIsMutable();
+          serversleft_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          serversleftBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder addServersleft(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair value) {
+        if (serversleftBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureServersleftIsMutable();
+          serversleft_.add(value);
+          onChanged();
+        } else {
+          serversleftBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder addServersleft(
+          int index, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair value) {
+        if (serversleftBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureServersleftIsMutable();
+          serversleft_.add(index, value);
+          onChanged();
+        } else {
+          serversleftBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder addServersleft(
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder builderForValue) {
+        if (serversleftBuilder_ == null) {
+          ensureServersleftIsMutable();
+          serversleft_.add(builderForValue.build());
+          onChanged();
+        } else {
+          serversleftBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder addServersleft(
+          int index, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder builderForValue) {
+        if (serversleftBuilder_ == null) {
+          ensureServersleftIsMutable();
+          serversleft_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          serversleftBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder addAllServersleft(
+          java.lang.Iterable<? extends com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair> values) {
+        if (serversleftBuilder_ == null) {
+          ensureServersleftIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, serversleft_);
+          onChanged();
+        } else {
+          serversleftBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder clearServersleft() {
+        if (serversleftBuilder_ == null) {
+          serversleft_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          serversleftBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public Builder removeServersleft(int index) {
+        if (serversleftBuilder_ == null) {
+          ensureServersleftIsMutable();
+          serversleft_.remove(index);
+          onChanged();
+        } else {
+          serversleftBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder getServersleftBuilder(
+          int index) {
+        return getServersleftFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder getServersleftOrBuilder(
+          int index) {
+        if (serversleftBuilder_ == null) {
+          return serversleft_.get(index);  } else {
+          return serversleftBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public java.util.List<? extends com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder> 
+           getServersleftOrBuilderList() {
+        if (serversleftBuilder_ != null) {
+          return serversleftBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(serversleft_);
+        }
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder addServersleftBuilder() {
+        return getServersleftFieldBuilder().addBuilder(
+            com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder addServersleftBuilder(
+          int index) {
+        return getServersleftFieldBuilder().addBuilder(
+            index, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ServerPair serversleft = 2;</code>
+       */
+      public java.util.List<com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder> 
+           getServersleftBuilderList() {
+        return getServersleftFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder> 
+          getServersleftFieldBuilder() {
+        if (serversleftBuilder_ == null) {
+          serversleftBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder>(
+                  serversleft_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          serversleft_ = null;
+        }
+        return serversleftBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ListofServers)
+    }
+
+    // @@protoc_insertion_point(class_scope:ListofServers)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ListofServers>
+        PARSER = new com.google.protobuf.AbstractParser<ListofServers>() {
+      @java.lang.Override
+      public ListofServers parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ListofServers(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ListofServers> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ListofServers> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofServers getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ListofClientsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ListofClients)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    java.util.List<java.lang.String>
+        getClientsList();
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    int getClientsCount();
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    java.lang.String getClients(int index);
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientsBytes(int index);
+
+    /**
+     * <code>int32 message = 2;</code>
+     */
+    int getMessage();
+  }
+  /**
+   * Protobuf type {@code ListofClients}
+   */
+  public  static final class ListofClients extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ListofClients)
+      ListofClientsOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ListofClients.newBuilder() to construct.
+    private ListofClients(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ListofClients() {
+      clients_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      message_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ListofClients(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                clients_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              clients_.add(s);
+              break;
+            }
+            case 16: {
+
+              message_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          clients_ = clients_.getUnmodifiableView();
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofClients_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofClients_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int CLIENTS_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList clients_;
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getClientsList() {
+      return clients_;
+    }
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    public int getClientsCount() {
+      return clients_.size();
+    }
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    public java.lang.String getClients(int index) {
+      return clients_.get(index);
+    }
+    /**
+     * <code>repeated string clients = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientsBytes(int index) {
+      return clients_.getByteString(index);
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private int message_;
+    /**
+     * <code>int32 message = 2;</code>
+     */
+    public int getMessage() {
+      return message_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < clients_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, clients_.getRaw(i));
+      }
+      if (message_ != 0) {
+        output.writeInt32(2, message_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < clients_.size(); i++) {
+          dataSize += computeStringSizeNoTag(clients_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getClientsList().size();
+      }
+      if (message_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, message_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients) obj;
+
+      boolean result = true;
+      result = result && getClientsList()
+          .equals(other.getClientsList());
+      result = result && (getMessage()
+          == other.getMessage());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getClientsCount() > 0) {
+        hash = (37 * hash) + CLIENTS_FIELD_NUMBER;
+        hash = (53 * hash) + getClientsList().hashCode();
+      }
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ListofClients}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ListofClients)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClientsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofClients_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofClients_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        clients_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        message_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ListofClients_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          clients_ = clients_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.clients_ = clients_;
+        result.message_ = message_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients.getDefaultInstance()) return this;
+        if (!other.clients_.isEmpty()) {
+          if (clients_.isEmpty()) {
+            clients_ = other.clients_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureClientsIsMutable();
+            clients_.addAll(other.clients_);
+          }
+          onChanged();
+        }
+        if (other.getMessage() != 0) {
+          setMessage(other.getMessage());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.LazyStringList clients_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureClientsIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          clients_ = new com.google.protobuf.LazyStringArrayList(clients_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getClientsList() {
+        return clients_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public int getClientsCount() {
+        return clients_.size();
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public java.lang.String getClients(int index) {
+        return clients_.get(index);
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientsBytes(int index) {
+        return clients_.getByteString(index);
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public Builder setClients(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureClientsIsMutable();
+        clients_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public Builder addClients(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureClientsIsMutable();
+        clients_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public Builder addAllClients(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureClientsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, clients_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public Builder clearClients() {
+        clients_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string clients = 1;</code>
+       */
+      public Builder addClientsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureClientsIsMutable();
+        clients_.add(value);
+        onChanged();
+        return this;
+      }
+
+      private int message_ ;
+      /**
+       * <code>int32 message = 2;</code>
+       */
+      public int getMessage() {
+        return message_;
+      }
+      /**
+       * <code>int32 message = 2;</code>
+       */
+      public Builder setMessage(int value) {
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 message = 2;</code>
+       */
+      public Builder clearMessage() {
+        
+        message_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ListofClients)
+    }
+
+    // @@protoc_insertion_point(class_scope:ListofClients)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ListofClients>
+        PARSER = new com.google.protobuf.AbstractParser<ListofClients>() {
+      @java.lang.Override
+      public ListofClients parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ListofClients(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ListofClients> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ListofClients> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ListofClients getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface removeClientsFromListOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:removeClientsFromList)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string clientName = 1;</code>
+     */
+    java.lang.String getClientName();
+    /**
+     * <code>string clientName = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getClientNameBytes();
+  }
+  /**
+   * Protobuf type {@code removeClientsFromList}
+   */
+  public  static final class removeClientsFromList extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:removeClientsFromList)
+      removeClientsFromListOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use removeClientsFromList.newBuilder() to construct.
+    private removeClientsFromList(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private removeClientsFromList() {
+      clientName_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private removeClientsFromList(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientName_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_removeClientsFromList_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_removeClientsFromList_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList.Builder.class);
+    }
+
+    public static final int CLIENTNAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object clientName_;
+    /**
+     * <code>string clientName = 1;</code>
+     */
+    public java.lang.String getClientName() {
+      java.lang.Object ref = clientName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string clientName = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClientNameBytes() {
+      java.lang.Object ref = clientName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getClientNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, clientName_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getClientNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, clientName_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList) obj;
+
+      boolean result = true;
+      result = result && getClientName()
+          .equals(other.getClientName());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CLIENTNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getClientName().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code removeClientsFromList}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:removeClientsFromList)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromListOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_removeClientsFromList_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_removeClientsFromList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        clientName_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_removeClientsFromList_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList(this);
+        result.clientName_ = clientName_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList.getDefaultInstance()) return this;
+        if (!other.getClientName().isEmpty()) {
+          clientName_ = other.clientName_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object clientName_ = "";
+      /**
+       * <code>string clientName = 1;</code>
+       */
+      public java.lang.String getClientName() {
+        java.lang.Object ref = clientName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string clientName = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getClientNameBytes() {
+        java.lang.Object ref = clientName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string clientName = 1;</code>
+       */
+      public Builder setClientName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientName = 1;</code>
+       */
+      public Builder clearClientName() {
+        
+        clientName_ = getDefaultInstance().getClientName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string clientName = 1;</code>
+       */
+      public Builder setClientNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientName_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:removeClientsFromList)
+    }
+
+    // @@protoc_insertion_point(class_scope:removeClientsFromList)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<removeClientsFromList>
+        PARSER = new com.google.protobuf.AbstractParser<removeClientsFromList>() {
+      @java.lang.Override
+      public removeClientsFromList parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new removeClientsFromList(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<removeClientsFromList> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<removeClientsFromList> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.removeClientsFromList getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ServerPairOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ServerPair)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 serverid = 1;</code>
+     */
+    int getServerid();
+
+    /**
+     * <code>int32 servername = 2;</code>
+     */
+    int getServername();
+  }
+  /**
+   * Protobuf type {@code ServerPair}
+   */
+  public  static final class ServerPair extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ServerPair)
+      ServerPairOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ServerPair.newBuilder() to construct.
+    private ServerPair(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ServerPair() {
+      serverid_ = 0;
+      servername_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ServerPair(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              serverid_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              servername_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerPair_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerPair_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder.class);
+    }
+
+    public static final int SERVERID_FIELD_NUMBER = 1;
+    private int serverid_;
+    /**
+     * <code>int32 serverid = 1;</code>
+     */
+    public int getServerid() {
+      return serverid_;
+    }
+
+    public static final int SERVERNAME_FIELD_NUMBER = 2;
+    private int servername_;
+    /**
+     * <code>int32 servername = 2;</code>
+     */
+    public int getServername() {
+      return servername_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (serverid_ != 0) {
+        output.writeInt32(1, serverid_);
+      }
+      if (servername_ != 0) {
+        output.writeInt32(2, servername_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (serverid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, serverid_);
+      }
+      if (servername_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, servername_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair) obj;
+
+      boolean result = true;
+      result = result && (getServerid()
+          == other.getServerid());
+      result = result && (getServername()
+          == other.getServername());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SERVERID_FIELD_NUMBER;
+      hash = (53 * hash) + getServerid();
+      hash = (37 * hash) + SERVERNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getServername();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ServerPair}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ServerPair)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPairOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerPair_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerPair_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        serverid_ = 0;
+
+        servername_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_ServerPair_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair(this);
+        result.serverid_ = serverid_;
+        result.servername_ = servername_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair.getDefaultInstance()) return this;
+        if (other.getServerid() != 0) {
+          setServerid(other.getServerid());
+        }
+        if (other.getServername() != 0) {
+          setServername(other.getServername());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int serverid_ ;
+      /**
+       * <code>int32 serverid = 1;</code>
+       */
+      public int getServerid() {
+        return serverid_;
+      }
+      /**
+       * <code>int32 serverid = 1;</code>
+       */
+      public Builder setServerid(int value) {
+        
+        serverid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 serverid = 1;</code>
+       */
+      public Builder clearServerid() {
+        
+        serverid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int servername_ ;
+      /**
+       * <code>int32 servername = 2;</code>
+       */
+      public int getServername() {
+        return servername_;
+      }
+      /**
+       * <code>int32 servername = 2;</code>
+       */
+      public Builder setServername(int value) {
+        
+        servername_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 servername = 2;</code>
+       */
+      public Builder clearServername() {
+        
+        servername_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ServerPair)
+    }
+
+    // @@protoc_insertion_point(class_scope:ServerPair)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ServerPair>
+        PARSER = new com.google.protobuf.AbstractParser<ServerPair>() {
+      @java.lang.Override
+      public ServerPair parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ServerPair(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ServerPair> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ServerPair> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.ServerPair getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface BroadcasttoallclientsOrBuilder extends
       // @@protoc_insertion_point(interface_extends:Broadcasttoallclients)
       com.google.protobuf.MessageOrBuilder {
@@ -3714,6 +12035,556 @@ public final class KeyValueStoreProcedures {
 
     @java.lang.Override
     public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.SendNameofClient getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetNamesofClientsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:GetNamesofClients)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string requestnamesofClients = 1;</code>
+     */
+    java.lang.String getRequestnamesofClients();
+    /**
+     * <code>string requestnamesofClients = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getRequestnamesofClientsBytes();
+  }
+  /**
+   * Protobuf type {@code GetNamesofClients}
+   */
+  public  static final class GetNamesofClients extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:GetNamesofClients)
+      GetNamesofClientsOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetNamesofClients.newBuilder() to construct.
+    private GetNamesofClients(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetNamesofClients() {
+      requestnamesofClients_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetNamesofClients(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              requestnamesofClients_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_GetNamesofClients_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_GetNamesofClients_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients.Builder.class);
+    }
+
+    public static final int REQUESTNAMESOFCLIENTS_FIELD_NUMBER = 1;
+    private volatile java.lang.Object requestnamesofClients_;
+    /**
+     * <code>string requestnamesofClients = 1;</code>
+     */
+    public java.lang.String getRequestnamesofClients() {
+      java.lang.Object ref = requestnamesofClients_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        requestnamesofClients_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string requestnamesofClients = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRequestnamesofClientsBytes() {
+      java.lang.Object ref = requestnamesofClients_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        requestnamesofClients_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getRequestnamesofClientsBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestnamesofClients_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRequestnamesofClientsBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestnamesofClients_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients)) {
+        return super.equals(obj);
+      }
+      com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients other = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients) obj;
+
+      boolean result = true;
+      result = result && getRequestnamesofClients()
+          .equals(other.getRequestnamesofClients());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUESTNAMESOFCLIENTS_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestnamesofClients().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code GetNamesofClients}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:GetNamesofClients)
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClientsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_GetNamesofClients_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_GetNamesofClients_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients.class, com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients.Builder.class);
+      }
+
+      // Construct using com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        requestnamesofClients_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.internal_static_GetNamesofClients_descriptor;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients getDefaultInstanceForType() {
+        return com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients build() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients buildPartial() {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients result = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients(this);
+        result.requestnamesofClients_ = requestnamesofClients_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients) {
+          return mergeFrom((com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients other) {
+        if (other == com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients.getDefaultInstance()) return this;
+        if (!other.getRequestnamesofClients().isEmpty()) {
+          requestnamesofClients_ = other.requestnamesofClients_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object requestnamesofClients_ = "";
+      /**
+       * <code>string requestnamesofClients = 1;</code>
+       */
+      public java.lang.String getRequestnamesofClients() {
+        java.lang.Object ref = requestnamesofClients_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          requestnamesofClients_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string requestnamesofClients = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getRequestnamesofClientsBytes() {
+        java.lang.Object ref = requestnamesofClients_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          requestnamesofClients_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string requestnamesofClients = 1;</code>
+       */
+      public Builder setRequestnamesofClients(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        requestnamesofClients_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string requestnamesofClients = 1;</code>
+       */
+      public Builder clearRequestnamesofClients() {
+        
+        requestnamesofClients_ = getDefaultInstance().getRequestnamesofClients();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string requestnamesofClients = 1;</code>
+       */
+      public Builder setRequestnamesofClientsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        requestnamesofClients_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:GetNamesofClients)
+    }
+
+    // @@protoc_insertion_point(class_scope:GetNamesofClients)
+    private static final com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients();
+    }
+
+    public static com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<GetNamesofClients>
+        PARSER = new com.google.protobuf.AbstractParser<GetNamesofClients>() {
+      @java.lang.Override
+      public GetNamesofClients parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetNamesofClients(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetNamesofClients> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetNamesofClients> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.gRE_Multi_Threaded_Server.grpc.KeyValueStoreProcedures.GetNamesofClients getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8750,6 +17621,76 @@ public final class KeyValueStoreProcedures {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_PermissionRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_PermissionRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_PermissionGrantedorDenied_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_PermissionGrantedorDenied_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SendConsensus_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SendConsensus_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ClientConsensus_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ClientConsensus_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ServerShutdown_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ServerShutdown_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_BringServerDown_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_BringServerDown_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_RequestListofServers_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_RequestListofServers_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Dictionary_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Dictionary_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Dictionary_PairsEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Dictionary_PairsEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Dictionary_DroppedserverEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Dictionary_DroppedserverEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ListofServers_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ListofServers_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ListofClients_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ListofClients_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_removeClientsFromList_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_removeClientsFromList_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ServerPair_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ServerPair_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Broadcasttoallclients_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -8774,6 +17715,11 @@ public final class KeyValueStoreProcedures {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SendNameofClient_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_GetNamesofClients_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_GetNamesofClients_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_GetKey_descriptor;
   private static final 
@@ -8823,40 +17769,77 @@ public final class KeyValueStoreProcedures {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n key_value_store_procedures.proto\"h\n\025Br" +
-      "oadcasttoallclients\022\021\n\tsendabort\030\001 \001(\005\022\024" +
-      "\n\014sendprepared\030\002 \001(\005\022\022\n\nsendcommit\030\003 \001(\005" +
-      "\022\022\n\nclientname\030\004 \001(\t\"\240\001\n\nFromServer\022\'\n\007m" +
-      "essage\030\001 \001(\0132\026.Broadcasttoallclients\022#\n\010" +
-      "message2\030\002 \001(\0132\021.SendNameofClient\022\031\n\021che" +
-      "ckglobalcommit\030\003 \001(\005\022\025\n\rcheckprepared\030\004 " +
-      "\001(\005\022\022\n\ncheckabort\030\005 \001(\005\"J\n\004Pair\022\013\n\003key\030\001" +
-      " \001(\005\022\r\n\005value\030\002 \001(\t\022\022\n\nclientname\030\003 \001(\t\022" +
-      "\022\n\nportnumber\030\004 \001(\005\"3\n\rAbortorcommit\022\016\n\006" +
-      "aborco\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\"(\n\020Send" +
-      "NameofClient\022\024\n\014nameofclient\030\001 \001(\t\"B\n\006Ge" +
-      "tKey\022\020\n\010inputkey\030\001 \001(\005\022\022\n\nclientname\030\002 \001" +
-      "(\t\022\022\n\nportnumber\030\003 \001(\005\"H\n\tDeleteKey\022\023\n\013t" +
-      "heinputkey\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\022\022\n\n" +
-      "portnumber\030\003 \001(\005\"2\n\nClientExit\022\020\n\010inputk" +
-      "ey\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\"2\n\016Successf" +
-      "ulExit\022\017\n\007message\030\001 \001(\t\022\017\n\007failure\030\002 \001(\005" +
-      "\"1\n\rSuccessfulPut\022\017\n\007message\030\001 \001(\t\022\017\n\007fa" +
-      "ilure\030\002 \001(\005\"1\n\rSuccessfulGet\022\017\n\007message\030" +
-      "\001 \001(\t\022\017\n\007failure\030\002 \001(\005\"4\n\020SuccessfulDele" +
-      "te\022\017\n\007message\030\001 \001(\t\022\017\n\007failure\030\002 \001(\005\"3\n\017" +
-      "SuccessfulAbort\022\017\n\007message\030\001 \001(\t\022\017\n\007fail" +
-      "ure\030\002 \001(\0052\362\002\n\rKeyValueStore\022)\n\016InsertKey" +
-      "Value\022\005.Pair\032\016.SuccessfulPut\"\000\022(\n\013GetKey" +
-      "Value\022\007.GetKey\032\016.SuccessfulGet\"\000\0221\n\016Dele" +
-      "teKeyValue\022\n.DeleteKey\032\021.SuccessfulDelet" +
-      "e\"\000\022.\n\014ClientExited\022\013.ClientExit\032\017.Succe" +
-      "ssfulExit\"\000\022;\n\021EnterNameofClient\022\021.SendN" +
-      "ameofClient\032\021.SendNameofClient\"\000\0229\n\023Acce" +
-      "ptabortorcommit\022\016.Abortorcommit\032\020.Succes" +
-      "sfulAbort\"\000\0221\n\004chat\022\026.Broadcasttoallclie" +
-      "nts\032\013.FromServer\"\000(\0010\001B$\n\"com.gRE_Multi_" +
-      "Threaded_Server.grpcb\006proto3"
+      "\n key_value_store_procedures.proto\"\\\n\021Pe" +
+      "rmissionRequest\022\022\n\nclientname\030\001 \001(\t\022\031\n\021s" +
+      "uggestioninteger\030\002 \001(\005\022\030\n\020suggestionstri" +
+      "ng\030\003 \001(\t\"\223\001\n\031PermissionGrantedorDenied\022#" +
+      "\n\007permreq\030\001 \001(\0132\022.PermissionRequest\022\017\n\007m" +
+      "essage\030\002 \001(\005\022\022\n\nclientname\030\003 \001(\t\022\025\n\rsugg" +
+      "estionint\030\004 \001(\005\022\025\n\rsuggestionstr\030\005 \001(\t\"#" +
+      "\n\rSendConsensus\022\022\n\nclientname\030\001 \001(\t\"7\n\017C" +
+      "lientConsensus\022\023\n\013clientnames\030\001 \003(\t\022\017\n\007m" +
+      "essage\030\002 \001(\t\"$\n\016ServerShutdown\022\022\n\nserver" +
+      "name\030\001 \001(\005\",\n\017BringServerDown\022\031\n\021servert" +
+      "obringdown\030\001 \001(\005\"-\n\024RequestListofServers" +
+      "\022\025\n\rlistofservers\030\001 \001(\t\"\337\001\n\nDictionary\022%" +
+      "\n\005pairs\030\001 \003(\0132\026.Dictionary.PairsEntry\022\017\n" +
+      "\007message\030\002 \001(\t\0225\n\rdroppedserver\030\003 \003(\0132\036." +
+      "Dictionary.DroppedserverEntry\032,\n\nPairsEn" +
+      "try\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\005:\0028\001\0324\n\022D" +
+      "roppedserverEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030" +
+      "\002 \001(\005:\0028\001\"H\n\rListofServers\022\025\n\rlistofserv" +
+      "ers\030\001 \001(\005\022 \n\013serversleft\030\002 \003(\0132\013.ServerP" +
+      "air\"1\n\rListofClients\022\017\n\007clients\030\001 \003(\t\022\017\n" +
+      "\007message\030\002 \001(\005\"+\n\025removeClientsFromList\022" +
+      "\022\n\nclientName\030\001 \001(\t\"2\n\nServerPair\022\020\n\010ser" +
+      "verid\030\001 \001(\005\022\022\n\nservername\030\002 \001(\005\"h\n\025Broad" +
+      "casttoallclients\022\021\n\tsendabort\030\001 \001(\005\022\024\n\014s" +
+      "endprepared\030\002 \001(\005\022\022\n\nsendcommit\030\003 \001(\005\022\022\n" +
+      "\nclientname\030\004 \001(\t\"\240\001\n\nFromServer\022\'\n\007mess" +
+      "age\030\001 \001(\0132\026.Broadcasttoallclients\022#\n\010mes" +
+      "sage2\030\002 \001(\0132\021.SendNameofClient\022\031\n\021checkg" +
+      "lobalcommit\030\003 \001(\005\022\025\n\rcheckprepared\030\004 \001(\005" +
+      "\022\022\n\ncheckabort\030\005 \001(\005\"J\n\004Pair\022\013\n\003key\030\001 \001(" +
+      "\005\022\r\n\005value\030\002 \001(\t\022\022\n\nclientname\030\003 \001(\t\022\022\n\n" +
+      "portnumber\030\004 \001(\005\"3\n\rAbortorcommit\022\016\n\006abo" +
+      "rco\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\"(\n\020SendNam" +
+      "eofClient\022\024\n\014nameofclient\030\001 \001(\t\"2\n\021GetNa" +
+      "mesofClients\022\035\n\025requestnamesofClients\030\001 " +
+      "\001(\t\"B\n\006GetKey\022\020\n\010inputkey\030\001 \001(\005\022\022\n\nclien" +
+      "tname\030\002 \001(\t\022\022\n\nportnumber\030\003 \001(\005\"H\n\tDelet" +
+      "eKey\022\023\n\013theinputkey\030\001 \001(\005\022\022\n\nclientname\030" +
+      "\002 \001(\t\022\022\n\nportnumber\030\003 \001(\005\"2\n\nClientExit\022" +
+      "\020\n\010inputkey\030\001 \001(\005\022\022\n\nclientname\030\002 \001(\t\"2\n" +
+      "\016SuccessfulExit\022\017\n\007message\030\001 \001(\t\022\017\n\007fail" +
+      "ure\030\002 \001(\005\"1\n\rSuccessfulPut\022\017\n\007message\030\001 " +
+      "\001(\t\022\017\n\007failure\030\002 \001(\005\"1\n\rSuccessfulGet\022\017\n" +
+      "\007message\030\001 \001(\t\022\017\n\007failure\030\002 \001(\005\"4\n\020Succe" +
+      "ssfulDelete\022\017\n\007message\030\001 \001(\t\022\017\n\007failure\030" +
+      "\002 \001(\005\"3\n\017SuccessfulAbort\022\017\n\007message\030\001 \001(" +
+      "\t\022\017\n\007failure\030\002 \001(\0052\326\006\n\rKeyValueStore\022)\n\016" +
+      "InsertKeyValue\022\005.Pair\032\016.SuccessfulPut\"\000\022" +
+      "(\n\013GetKeyValue\022\007.GetKey\032\016.SuccessfulGet\"" +
+      "\000\0221\n\016DeleteKeyValue\022\n.DeleteKey\032\021.Succes" +
+      "sfulDelete\"\000\022.\n\014ClientExited\022\013.ClientExi" +
+      "t\032\017.SuccessfulExit\"\000\022;\n\021EnterNameofClien" +
+      "t\022\021.SendNameofClient\032\021.SendNameofClient\"" +
+      "\000\0226\n\016NamesOfClients\022\022.GetNamesofClients\032" +
+      "\016.ListofClients\"\000\0229\n\023Acceptabortorcommit" +
+      "\022\016.Abortorcommit\032\020.SuccessfulAbort\"\000\0221\n\004" +
+      "chat\022\026.Broadcasttoallclients\032\013.FromServe" +
+      "r\"\000(\0010\001\022P\n\030communicateWithProposers\022\022.Pe" +
+      "rmissionRequest\032\032.PermissionGrantedorDen" +
+      "ied\"\000(\0010\001\022/\n\tConsensus\022\016.SendConsensus\032\020" +
+      ".ClientConsensus\"\000\0228\n\022SendServerShutdown" +
+      "\022\017.ServerShutdown\032\017.ServerShutdown\"\000\0229\n\021" +
+      "RequestServerList\022\025.RequestListofServers" +
+      "\032\013.Dictionary\"\000\022/\n\014RemoveServer\022\020.BringS" +
+      "erverDown\032\013.Dictionary\"\000\022>\n\027ServerAvaila" +
+      "bilityCheck\022\020.BringServerDown\032\013.Dictiona" +
+      "ry\"\000(\0010\001\022A\n\rRemoveClients\022\026.removeClient" +
+      "sFromList\032\026.removeClientsFromList\"\000B$\n\"c" +
+      "om.gRE_Multi_Threaded_Server.grpcb\006proto" +
+      "3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -8870,80 +17853,170 @@ public final class KeyValueStoreProcedures {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_Broadcasttoallclients_descriptor =
+    internal_static_PermissionRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
+    internal_static_PermissionRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_PermissionRequest_descriptor,
+        new java.lang.String[] { "Clientname", "Suggestioninteger", "Suggestionstring", });
+    internal_static_PermissionGrantedorDenied_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_PermissionGrantedorDenied_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_PermissionGrantedorDenied_descriptor,
+        new java.lang.String[] { "Permreq", "Message", "Clientname", "Suggestionint", "Suggestionstr", });
+    internal_static_SendConsensus_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_SendConsensus_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SendConsensus_descriptor,
+        new java.lang.String[] { "Clientname", });
+    internal_static_ClientConsensus_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_ClientConsensus_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ClientConsensus_descriptor,
+        new java.lang.String[] { "Clientnames", "Message", });
+    internal_static_ServerShutdown_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_ServerShutdown_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ServerShutdown_descriptor,
+        new java.lang.String[] { "Servername", });
+    internal_static_BringServerDown_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_BringServerDown_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_BringServerDown_descriptor,
+        new java.lang.String[] { "Servertobringdown", });
+    internal_static_RequestListofServers_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_RequestListofServers_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_RequestListofServers_descriptor,
+        new java.lang.String[] { "Listofservers", });
+    internal_static_Dictionary_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_Dictionary_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Dictionary_descriptor,
+        new java.lang.String[] { "Pairs", "Message", "Droppedserver", });
+    internal_static_Dictionary_PairsEntry_descriptor =
+      internal_static_Dictionary_descriptor.getNestedTypes().get(0);
+    internal_static_Dictionary_PairsEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Dictionary_PairsEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_Dictionary_DroppedserverEntry_descriptor =
+      internal_static_Dictionary_descriptor.getNestedTypes().get(1);
+    internal_static_Dictionary_DroppedserverEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Dictionary_DroppedserverEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_ListofServers_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_ListofServers_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ListofServers_descriptor,
+        new java.lang.String[] { "Listofservers", "Serversleft", });
+    internal_static_ListofClients_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_ListofClients_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ListofClients_descriptor,
+        new java.lang.String[] { "Clients", "Message", });
+    internal_static_removeClientsFromList_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_removeClientsFromList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_removeClientsFromList_descriptor,
+        new java.lang.String[] { "ClientName", });
+    internal_static_ServerPair_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_ServerPair_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ServerPair_descriptor,
+        new java.lang.String[] { "Serverid", "Servername", });
+    internal_static_Broadcasttoallclients_descriptor =
+      getDescriptor().getMessageTypes().get(12);
     internal_static_Broadcasttoallclients_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Broadcasttoallclients_descriptor,
         new java.lang.String[] { "Sendabort", "Sendprepared", "Sendcommit", "Clientname", });
     internal_static_FromServer_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_FromServer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FromServer_descriptor,
         new java.lang.String[] { "Message", "Message2", "Checkglobalcommit", "Checkprepared", "Checkabort", });
     internal_static_Pair_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_Pair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Pair_descriptor,
         new java.lang.String[] { "Key", "Value", "Clientname", "Portnumber", });
     internal_static_Abortorcommit_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_Abortorcommit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Abortorcommit_descriptor,
         new java.lang.String[] { "Aborco", "Clientname", });
     internal_static_SendNameofClient_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_SendNameofClient_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SendNameofClient_descriptor,
         new java.lang.String[] { "Nameofclient", });
+    internal_static_GetNamesofClients_descriptor =
+      getDescriptor().getMessageTypes().get(17);
+    internal_static_GetNamesofClients_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_GetNamesofClients_descriptor,
+        new java.lang.String[] { "RequestnamesofClients", });
     internal_static_GetKey_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_GetKey_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetKey_descriptor,
         new java.lang.String[] { "Inputkey", "Clientname", "Portnumber", });
     internal_static_DeleteKey_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_DeleteKey_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeleteKey_descriptor,
         new java.lang.String[] { "Theinputkey", "Clientname", "Portnumber", });
     internal_static_ClientExit_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(20);
     internal_static_ClientExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientExit_descriptor,
         new java.lang.String[] { "Inputkey", "Clientname", });
     internal_static_SuccessfulExit_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_SuccessfulExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulExit_descriptor,
         new java.lang.String[] { "Message", "Failure", });
     internal_static_SuccessfulPut_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_SuccessfulPut_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulPut_descriptor,
         new java.lang.String[] { "Message", "Failure", });
     internal_static_SuccessfulGet_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_SuccessfulGet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulGet_descriptor,
         new java.lang.String[] { "Message", "Failure", });
     internal_static_SuccessfulDelete_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(24);
     internal_static_SuccessfulDelete_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulDelete_descriptor,
         new java.lang.String[] { "Message", "Failure", });
     internal_static_SuccessfulAbort_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(25);
     internal_static_SuccessfulAbort_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SuccessfulAbort_descriptor,

@@ -1,11 +1,11 @@
 package ServerPackage;
 
-import io.grpc.BindableService;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import keyvaluestore.Key_Value_Store_Service;
 
 import java.io.IOException;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
@@ -28,6 +28,9 @@ public class GRPCServer {
     private static String port_number4="9093" ;
     private static String port_number5="9094" ;
 
+    private final AtomicBoolean running = new AtomicBoolean(false);
+
+
 
 
     /**Handle Milliseconds for Log**/
@@ -41,13 +44,19 @@ public class GRPCServer {
         /**
          * Create all servers with port number
          */
+        try {
+            if (args.length == 0) {
+                System.out.println("<Usage: java -jar your_directory_here <jarfilepath> <portnumber>");
+            }
+
+
         server= ServerBuilder.forPort(Integer.parseInt(args[0])).addService(new Key_Value_Store_Service()).build();
         server2= ServerBuilder.forPort(Integer.parseInt(port_number2)).addService(new Key_Value_Store_Service()).build();
         server3= ServerBuilder.forPort(Integer.parseInt(port_number3)).addService(new Key_Value_Store_Service()).build();
         server4= ServerBuilder.forPort(Integer.parseInt(port_number4)).addService(new Key_Value_Store_Service()).build();
         server5= ServerBuilder.forPort(Integer.parseInt(port_number5)).addService(new Key_Value_Store_Service()).build();
 
-        try {
+
             /**Start all server**/
             server.start();
             server2.start();
@@ -56,14 +65,21 @@ public class GRPCServer {
             server5.start();
 
 
+
+
             Logger_Function("Server started, listening on " + server.getPort());
             Logger_Function("Server started, listening on " + server2.getPort());
             Logger_Function("Server started, listening on " + server3.getPort());
             Logger_Function("Server started, listening on " + server4.getPort());
             Logger_Function("Server started, listening on " + server5.getPort());
 
+            //server.shutdownNow();
+
+           // server.start();
+
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
                 // Use stderr here since the logger may have been reset by its JVM shutdown hook.
+
                 Logger_Function("*** shutting down gRPC server since JVM is shutting down");
                 stop();
                 Logger_Function("*** server shut down");
@@ -71,6 +87,8 @@ public class GRPCServer {
 
         } catch (IOException e) {
             e.printStackTrace();
+        }catch (ArrayIndexOutOfBoundsException a){
+
         }
 
         try {
@@ -84,22 +102,60 @@ public class GRPCServer {
             server4.awaitTermination();
             server5.awaitTermination();
 
+
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }catch (NullPointerException a){
+
         }
     }
 
     /** Stop serving requests and shutdown resources. */
     public static void stop() {
-        if (server != null || server2 != null || server3 != null|| server4 != null ||server5 != null) {
-            server.shutdown();
-            server2.shutdown();
-            server3.shutdown();
-            server4.shutdown();
-            server5.shutdown();
+        System.out.println("Im called");
+        server.shutdown();
+        server2.shutdown();
+        server3.shutdown();
+        server4.shutdown();
+        server5.shutdown();
 
-        }
+
+//        if (server != null ) {
+//            server.shutdown();
+//        }
+//        else if (server2 != null ){
+//            server2.shutdown();
+//        }
+//        else if(server3!=null){
+//            server3.shutdown();
+//
+//        }
+//        else if(server4!=null){
+//            server4.shutdown();
+//
+//        }
+//        else if(server5!=null){
+//            server5.shutdown();
+//
+//        }
+       // System.exit(0);
+
     }
+
+    /*public void run() {
+
+        running.set(true);
+        while (running.get()) {
+        try {
+            Thread.sleep(5000);
+            Thread.currentThread().start();
+            } catch (InterruptedException e){
+                Thread.currentThread().interrupt();
+                System.out.println("Thread was interrupted, Failed to complete operation");
+            }
+// do something here
+        }
+    }*/
 
     /**
      * Function to log to server/client
@@ -115,6 +171,8 @@ public class GRPCServer {
                 record.getMessage(),
                 String.valueOf(record.getThrown())));
     }
+
+
 
 
 

@@ -5,30 +5,52 @@
       <artifact name="gRE_Multi_Threaded_Project:jar" />
       <artifact name="gRE_Multi_Threaded_Project:jar2" />
       <artifact name="gRE_Multi_Threaded_Project:jar3" />
+      <artifact name="gRE_Multi_Threaded_Project:jar4" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9e028f-315f-4f62-a463-5e6ffba51904" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/gRE_Multi_Threaded_Project_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/gRE_Multi_Threaded_Project_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/gRE_Multi_Threaded_Project_jar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/gRE_Multi_Threaded_Project_jar2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/gRE_Multi_Threaded_Project_jar3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/gRE_Multi_Threaded_Project_jar3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/gRE_Multi_Threaded_Project_jar/gRE_Multi_Threaded_Project.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/gRE_Multi_Threaded_Project_jar2/gRE_Multi_Threaded_Project.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/gRE_Multi_Threaded_Project_jar3/gRE_Multi_Threaded_Project.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/C1FinalJar9090/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/C1RecentResource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/C1_resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/C2FinalJar9090/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/C2RecentResource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/C2Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client19090Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client1New9090Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client1Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client29090Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client2New9090Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client2Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/S1RecentResource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SFinalJar9090/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ServResource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Server9090resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ServerNew9090Resource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ServerResource/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/key_value_store_procedures.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/key_value_store_procedures.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient$ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient$ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient2$ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient2$ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient$ClientHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient$ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient2$ClientHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient2$ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClientPackage/GRPCClient2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ServerPackage/GRPCServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ServerPackage/GRPCServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc$KeyValueStoreBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc$KeyValueStoreBaseDescriptorSupplier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc$KeyValueStoreBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc$KeyValueStoreBlockingStub.class" afterDir="false" />
@@ -40,24 +62,33 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc$MethodHandlers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Abortorcommit$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Abortorcommit$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Abortorcommit$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Abortorcommit$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Abortorcommit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Abortorcommit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Broadcasttoallclients$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Broadcasttoallclients$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Broadcasttoallclients$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Broadcasttoallclients$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Broadcasttoallclients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Broadcasttoallclients.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$ClientExit$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$ClientExit$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$ClientExit$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$ClientExit$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$ClientExit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$ClientExit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKey$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKey$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKey$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKey$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKeyOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$DeleteKeyOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$FromServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$FromServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$FromServer$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$FromServer$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$FromServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$FromServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKey$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKey$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKey$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKey$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKeyOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$GetKeyOrBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Pair$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Pair$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Pair$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Pair$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$Pair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$PairOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$PairOrBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SendNameofClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SendNameofClient$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SendNameofClient$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SendNameofClient$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SendNameofClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SendNameofClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulAbort$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulAbort$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulAbort$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulAbort$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulAbort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulAbort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulDelete$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulDelete$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulDelete$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulDelete$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulDelete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures$SuccessfulDelete.class" afterDir="false" />
@@ -73,14 +104,15 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/key_value_store_procedures.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/key_value_store_procedures.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/keyvaluestore/Key_Value_Store_Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/keyvaluestore/Key_Value_Store_Service$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/keyvaluestore/Key_Value_Store_Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/keyvaluestore/Key_Value_Store_Service$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/keyvaluestore/Key_Value_Store_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/keyvaluestore/Key_Value_Store_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Client1Resource/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Client2Resource/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/ServerResource/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/key_value_store_procedures.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/C1FinalJar9090/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/C2FinalJar9090/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/SFinalJar9090/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gRE_Multi_Threaded_Project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gRE_Multi_Threaded_Project-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,51 +121,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/gRE_Multi_Threaded_Project$GRPCClient9.ic" NAME="GRPCClient9 Coverage Results" MODIFIED="1587076572704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ClientPackage.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1371474637">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="11" />
-          <entry key="java" value="39" />
-          <entry key="md" value="2" />
-          <entry key="proto" value="2" />
+          <entry key="java" value="87" />
+          <entry key="md" value="3" />
+          <entry key="proto" value="9" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="11" />
-          <entry key="JAVA" value="39" />
-          <entry key="Markdown" value="2" />
-          <entry key="PROTO" value="2" />
+          <entry key="JAVA" value="87" />
+          <entry key="Markdown" value="3" />
+          <entry key="PROTO" value="9" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="16819" />
-          <entry key="md" value="1058" />
-          <entry key="proto" value="2083" />
+          <entry key="java" value="41966" />
+          <entry key="md" value="5111" />
+          <entry key="proto" value="4399" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16819" />
-          <entry key="Markdown" value="1058" />
-          <entry key="PROTO" value="2083" />
+          <entry key="JAVA" value="41966" />
+          <entry key="Markdown" value="5111" />
+          <entry key="PROTO" value="4399" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -144,8 +183,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/key_value_store_procedures.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="1365">
+              <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2340">
+              <caret line="167" column="52" selection-start-line="167" selection-start-column="52" selection-end-line="167" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,97 +204,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-790">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="2085">
+              <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2190">
+              <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient8.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2145">
+              <caret line="160" selection-start-line="160" selection-end-line="162" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2175#2184#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient9.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2190">
+              <caret line="163" selection-start-line="163" selection-end-line="165" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2175#2184#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#17849#17850#0" expanded="true" />
-                <element signature="e#17915#17916#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6647" column="21" selection-start-line="6647" selection-start-column="21" selection-end-line="6647" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2607">
-              <caret line="443" selection-start-line="443" selection-start-column="2" selection-end-line="446" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5941">
-              <caret line="443" selection-start-line="443" selection-start-column="2" selection-end-line="446" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="480" selection-start-line="480" selection-end-line="480" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2611#2750#0" expanded="true" />
-                <element signature="e#4868#5009#0" expanded="true" />
-                <element signature="e#7174#7321#0" expanded="true" />
-                <element signature="e#9477#9623#0" expanded="true" />
-                <element signature="e#11854#12008#0" expanded="true" />
-                <element signature="e#14266#14416#0" expanded="true" />
-                <element signature="e#16547#16700#0" expanded="true" />
-                <element signature="e#17654#17655#0" expanded="true" />
-                <element signature="e#17701#17702#0" expanded="true" />
-                <element signature="e#23582#23583#0" expanded="true" />
-                <element signature="e#23610#23611#0" expanded="true" />
-                <element signature="e#26897#26898#0" expanded="true" />
-                <element signature="e#26925#26926#0" expanded="true" />
-                <element signature="e#29374#29375#0" expanded="true" />
-                <element signature="e#29402#29403#0" expanded="true" />
-                <element signature="e#36722#36723#0" expanded="true" />
-                <element signature="e#36764#36765#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-27">
-                <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+              <first_editor relative-caret-position="383">
+                <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -261,37 +271,43 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>key from</find>
-      <find>ClientExited</find>
-      <find>Entername</find>
-      <find>thread</find>
-      <find>Key:value</find>
-      <find>exited</find>
-      <find>awai</find>
-      <find>newBlockin</find>
-      <find>send</find>
-      <find>commitorabortreader</find>
-      <find>enterNa,</find>
-      <find>EnterName</find>
-      <find>Port</find>
-      <find>enterNameofClient</find>
-      <find>Set</find>
-      <find>response</find>
-      <find>setCl</find>
-      <find>SendN</find>
-      <find>Send</find>
-      <find>sendabort</find>
-      <find>FROM SERVER</find>
-      <find>println</find>
-      <find>abortClient6</find>
-      <find>responseObserver</find>
-      <find>port</find>
-      <find>check</find>
+      <find>initiatePaxos</find>
+      <find>Request Granted</find>
+      <find>No more servers to shutdown</find>
+      <find>loopcount</find>
+      <find>remcounter</find>
+      <find>re</find>
+      <find>right_suggestion_integer</find>
+      <find>System.out</find>
+      <find>Consensus may have</find>
+      <find>Re</find>
+      <find>Consensus may</find>
+      <find>Request Permission from Majority of Peers</find>
+      <find>Logger_Function</find>
+      <find>The highest</find>
+      <find>Client 7</find>
+      <find>Client 8</find>
       <find>System.out.println</find>
-      <find>clientname</find>
-      <find>clear</find>
+      <find>Client 2</find>
       <find>Client 1</find>
+      <find>Client 3</find>
+      <find>Server</find>
+      <find>2 or more acceptors</find>
+      <find>Server D</find>
+      <find>Server Down</find>
+      <find>unavailableserversWithoutDuplicates</find>
+      <find>Down</find>
+      <find>RemoveServer</find>
+      <find>Client 9</find>
+      <find>2 or more</find>
+      <find>10</find>
     </findStrings>
+    <replaceStrings>
+      <replace>false</replace>
+      <replace>unavailableserversWithoutDuplicates</replace>
+      <replace>unavailableserversinitial</replace>
+      <replace>unavailableserversWihtoutDuplicates</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -310,14 +326,22 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc.java" />
         <option value="$PROJECT_DIR$/target/classes/key_value_store_procedures.proto" />
-        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer5.java" />
         <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient5.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/key_value_store_procedures.proto" />
-        <option value="$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient6.java" />
         <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient3.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/key_value_store_procedures.proto" />
+        <option value="$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient9.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient8.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient7.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -340,10 +364,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-40" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="537" />
     <option name="y" value="23" />
-    <option name="width" value="512" />
+    <option name="width" value="1143" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -353,7 +377,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -393,6 +416,13 @@
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="gRE_Multi_Threaded_Project_jar3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gRE_Multi_Threaded_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gRE_Multi_Threaded_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="gRE_Multi_Threaded_Project_jar4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gRE_Multi_Threaded_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -442,14 +472,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gRE_Multi_Threaded_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gRE_Multi_Threaded_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ServerPackage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -463,11 +485,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/boss/Desktop/gRE_Multi_Threaded_Project/src/main/java/ServerPackage/GRPCServer.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586405260124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587615007728" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -486,9 +509,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GRPCClient2">
-    <configuration name="GRPCClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient" />
+  <component name="RunManager" selected="Application.GRPCClient9">
+    <configuration name="GRPCClient3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient3" />
+      <module name="gRE_Multi_Threaded_Project" />
+      <option name="PROGRAM_PARAMETERS" value="9092" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ClientPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GRPCClient7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient7" />
       <module name="gRE_Multi_Threaded_Project" />
       <option name="PROGRAM_PARAMETERS" value="9090" />
       <extension name="coverage">
@@ -501,10 +538,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GRPCClient2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient2" />
+    <configuration name="GRPCClient8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient8" />
       <module name="gRE_Multi_Threaded_Project" />
-      <option name="PROGRAM_PARAMETERS" value="9090" />
+      <option name="PROGRAM_PARAMETERS" value="9091" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ClientPackage.*" />
@@ -515,24 +552,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GRPCClient4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient4" />
+    <configuration name="GRPCClient9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient9" />
       <module name="gRE_Multi_Threaded_Project" />
-      <option name="PROGRAM_PARAMETERS" value="9090" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ClientPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GRPCClient5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClientPackage.GRPCClient5" />
-      <module name="gRE_Multi_Threaded_Project" />
-      <option name="PROGRAM_PARAMETERS" value="9090" />
+      <option name="PROGRAM_PARAMETERS" value="9092" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ClientPackage.*" />
@@ -582,18 +605,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.GRPCServer" />
-      <item itemvalue="Application.GRPCClient" />
-      <item itemvalue="Application.GRPCClient4" />
-      <item itemvalue="Application.GRPCClient5" />
-      <item itemvalue="Application.GRPCClient2" />
+      <item itemvalue="Application.GRPCClient3" />
+      <item itemvalue="Application.GRPCClient7" />
+      <item itemvalue="Application.GRPCClient8" />
+      <item itemvalue="Application.GRPCClient9" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GRPCClient2" />
-        <item itemvalue="Application.GRPCClient" />
+        <item itemvalue="Application.GRPCClient9" />
+        <item itemvalue="Application.GRPCClient8" />
+        <item itemvalue="Application.GRPCClient7" />
         <item itemvalue="Application.GRPCServer" />
-        <item itemvalue="Application.GRPCClient4" />
-        <item itemvalue="Application.GRPCClient5" />
+        <item itemvalue="Application.GRPCClient3" />
       </list>
     </recent_temporary>
   </component>
@@ -620,9 +643,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-40" y="23" width="512" height="988" extended-state="0" />
+    <frame x="537" y="23" width="1143" height="988" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18336673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28792006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -630,29 +653,64 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31919643" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955357" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.498779" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59673023" visible="true" weight="0.3013393" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969475" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32924107" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33035713" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32962137" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32924107" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.498779" weight="0.32857144" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.495116" weight="0.3010204" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.40326977" side_tool="true" weight="0.3013393" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49383563" weight="0.328125" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24977294" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Jms Messenger" order="6" weight="0.3286945" />
+      <window_info anchor="right" id="Jms Messenger" order="6" weight="0.32788375" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.2214429" />
+      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.49916247" weight="0.06357857" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5008375" side_tool="true" weight="0.15479451" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28882834" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.498779" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.59673023" visible="true" weight="0.3013393" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969475" weight="0.3989796" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.498779" weight="0.32857144" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.495116" weight="0.3010204" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.40326977" side_tool="true" visible="true" weight="0.3013393" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49383563" weight="0.328125" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5008375" side_tool="true" weight="0.15479451" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24977294" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Jms Messenger" order="7" weight="0.32788375" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" sideWeight="0.49916247" visible="true" weight="0.06357857" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -704,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1128">
@@ -718,9 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient4.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient5.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient3.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-core/1.15.1/grpc-core-1.15.1.jar!/io/grpc/ServerBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -742,63 +790,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/key_value_store_procedures.proto">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer3.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer4.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer5.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="357">
+          <caret line="171" column="12" selection-start-line="171" selection-start-column="12" selection-end-line="171" selection-end-column="12" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="8456" column="21" selection-start-line="8456" selection-start-column="21" selection-end-line="8456" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="794" column="29" selection-start-line="794" selection-start-column="29" selection-end-line="794" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient5.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient6.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient4.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient3.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreGrpc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="480" selection-start-line="480" selection-end-line="480" />
+        <state relative-caret-position="212">
+          <caret line="521" selection-start-line="521" selection-end-line="521" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/key_value_store_procedures.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="167" column="52" selection-start-line="167" selection-start-column="52" selection-end-line="167" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2611#2750#0" expanded="true" />
-            <element signature="e#4868#5009#0" expanded="true" />
-            <element signature="e#7174#7321#0" expanded="true" />
-            <element signature="e#9477#9623#0" expanded="true" />
-            <element signature="e#11854#12008#0" expanded="true" />
-            <element signature="e#14266#14416#0" expanded="true" />
-            <element signature="e#16547#16700#0" expanded="true" />
-            <element signature="e#17654#17655#0" expanded="true" />
-            <element signature="e#17701#17702#0" expanded="true" />
-            <element signature="e#23582#23583#0" expanded="true" />
-            <element signature="e#23610#23611#0" expanded="true" />
-            <element signature="e#26897#26898#0" expanded="true" />
-            <element signature="e#26925#26926#0" expanded="true" />
-            <element signature="e#29374#29375#0" expanded="true" />
-            <element signature="e#29402#29403#0" expanded="true" />
-            <element signature="e#36722#36723#0" expanded="true" />
-            <element signature="e#36764#36765#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ServerPackage/GRPCServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-790">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="2085">
+          <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gRE_Multi_Threaded_Server/grpc/KeyValueStoreProcedures.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6647" column="21" selection-start-line="6647" selection-start-column="21" selection-end-line="6647" selection-end-column="21" />
+        <state relative-caret-position="2145">
+          <caret line="160" selection-start-line="160" selection-end-line="162" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2175#2184#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient9.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2607">
-          <caret line="443" selection-start-line="443" selection-start-column="2" selection-end-line="446" selection-end-column="77" />
+        <state relative-caret-position="2190">
+          <caret line="163" selection-start-line="163" selection-end-line="165" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2175#2184#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -806,32 +887,10 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-27">
-            <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+          <first_editor relative-caret-position="383">
+            <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClientPackage/GRPCClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5941">
-          <caret line="443" selection-start-line="443" selection-start-column="2" selection-end-line="446" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/keyvaluestore/Key_Value_Store_Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#17849#17850#0" expanded="true" />
-            <element signature="e#17915#17916#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,7 +900,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>gRE_Multi_Threaded_Project:jar3</last-edited>
+          <last-edited>gRE_Multi_Threaded_Project:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

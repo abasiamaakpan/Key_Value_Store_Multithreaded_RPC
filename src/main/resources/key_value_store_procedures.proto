@@ -16,14 +16,106 @@ service KeyValueStore {
 
     rpc EnterNameofClient(SendNameofClient) returns (SendNameofClient) {}
 
+    rpc NamesOfClients(GetNamesofClients) returns (ListofClients){}
+
     rpc Acceptabortorcommit(Abortorcommit)  returns (SuccessfulAbort) {}
 
     rpc chat(stream Broadcasttoallclients) returns (stream FromServer ) {}
 
+    rpc communicateWithProposers(stream PermissionRequest) returns (stream PermissionGrantedorDenied) {}
+
+    rpc Consensus(SendConsensus) returns (ClientConsensus){}
+
+    //Initial function that just posts on client that a particular server has been brought down
+    rpc SendServerShutdown(ServerShutdown) returns (ServerShutdown){}
+
+    rpc RequestServerList(RequestListofServers) returns (Dictionary) {}
+
+    //new function that goes into hashmap, removes the server and returns the remaining server list. Uses same logic as previous client that performs the same function
+    rpc RemoveServer(BringServerDown) returns (Dictionary){}
+
+    rpc ServerAvailabilityCheck(stream BringServerDown) returns (stream Dictionary){}
+
+    rpc RemoveClients(removeClientsFromList) returns (removeClientsFromList){}
 
 
 
 
+
+
+}
+
+
+
+
+message PermissionRequest{
+    string clientname=1;
+    int32 suggestioninteger=2;
+    string suggestionstring=3;
+}
+
+message PermissionGrantedorDenied {
+    PermissionRequest permreq = 1;
+    int32 message=2;
+    string clientname=3;
+    int32 suggestionint=4;
+    string suggestionstr=5;
+}
+
+message SendConsensus{
+    string clientname = 1;
+
+}
+
+message ClientConsensus{
+    repeated string clientnames =1;
+    string message=2;
+}
+
+message ServerShutdown{
+    int32 servername = 1;
+}
+
+
+message BringServerDown{
+    int32 servertobringdown=1;
+}
+
+message RequestListofServers{
+    string listofservers=1;
+
+}
+
+message Dictionary {
+    map<int32, int32> pairs = 1;
+    string message=2;
+    map<int32, int32> droppedserver = 3;
+
+
+}
+
+
+message ListofServers{
+    //ist field is no longer needed
+    int32 listofservers=1;
+    repeated ServerPair serversleft=2;
+
+
+}
+
+message ListofClients{
+    repeated string clients =1;
+    int32 message=2;
+}
+
+message removeClientsFromList{
+    string clientName=1;
+
+}
+
+message ServerPair{
+    int32 serverid = 1;
+    int32 servername = 2;
 }
 
 message Broadcasttoallclients{
@@ -41,8 +133,6 @@ message FromServer{
     int32 checkglobalcommit=3;
     int32 checkprepared=4;
     int32 checkabort=5;
-
-
 }
 
 message Pair {
@@ -61,7 +151,13 @@ message Abortorcommit{
 
 message SendNameofClient{
     string nameofclient = 1;
+}
 
+
+
+
+message GetNamesofClients{
+    string requestnamesofClients = 1;
 }
 
 message GetKey{
