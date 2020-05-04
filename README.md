@@ -1,4 +1,4 @@
-# Distributed Multithreaded Server RPC Key_Value_Store
+# Distributed Multithreaded Key_Value_Store using RPC and Paxos
 ## HashMap Initial Structure
 Key = 1, Value = value1
 Key = 2, Value = value2
