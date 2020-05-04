@@ -1,4 +1,4 @@
-# [Distributed Multithreaded Server RPC Key_Value_Store]
+# Distributed Multithreaded Server RPC Key_Value_Store
 ## HashMap Initial Structure
 Key = 1, Value = value1
 Key = 2, Value = value2
@@ -79,7 +79,7 @@ of the servers, consensus is achieved. Consensus phase is over when consensus ha
 been reached and if any other proposers try to propose a value, they are denied. 
 They can force quit or wait for new consensus phase 
 
-Note: Acceptors and Proposers are made to fail randomly. This is implemented by 
+**Note:** Acceptors and Proposers are made to fail randomly. This is implemented by 
 forcing the Server/service and Client and threads to sleep, be interrupted and 
 then restarted. Messages like ("Proposer stopped momentarily. Restarting proposer") 
 are the messages that show that the proposer has been stopped and is being restarted.  
